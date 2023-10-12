@@ -11,6 +11,7 @@ theme = "hugo-theme-relearn"
 
 [params]
   themeVariant = [ "zen-light", "zen-dark" ]
+  disableExplicitIndexURLs = true
 
 [markup.goldmark.renderer]
 unsafe = true
