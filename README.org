@@ -1,0 +1,2 @@
+* Brandt's Duployan
+This is the source for the pages for [[https://github.com/jacmoe/brandt][Brandt's Duployan repository]].

@@ -1,0 +1,16 @@
+baseURL = 'https://jacmoe.github.io/brandt/'
+languageCode = 'en-us'
+title = "Brandt's Duployan"
+publishDir = "docs"
+theme = "hugo-theme-relearn"
+
+[outputs]
+  home = ["HTML", "RSS", "PRINT", "SEARCH"]
+  section = ["HTML", "RSS", "PRINT"]
+  page = ["HTML", "RSS", "PRINT"]
+
+[params]
+  themeVariant = [ "zen-light", "zen-dark" ]
+
+[markup.goldmark.renderer]
+unsafe = true
