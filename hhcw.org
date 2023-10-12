@@ -1,0 +1,13 @@
+#+STARTUP: fold
+#+hugo_base_dir: .
+* done Welcome to Brandt's Duployan
+CLOSED: [2023-10-12 Thu 21:45]
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: .
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :archetype "home"
+:END:
+#+begin_description
+lorem ipsum
+#+end_description
+This is a small test
