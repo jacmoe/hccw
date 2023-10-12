@@ -1,6 +1,6 @@
-baseURL = 'https://jacmoe.github.io/brandt/'
+baseURL = 'https://jacmoe.github.io/hotel-california-of-creative-writing/'
 languageCode = 'en-us'
-title = "Brandt's Duployan"
+title = "Hotel California of Creative Writing"
 publishDir = "docs"
 theme = "hugo-theme-relearn"
 
