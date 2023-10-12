@@ -5,7 +5,7 @@ var relearn_search_index = [
     "description": "lorem ipsum",
     "tags": null,
     "title": "Welcome to Hotel California of Creative Writing",
-    "uri": "/hotel-california-of-creative-writing/welcome-to-hotel-california-of-creative-writing/index.html"
+    "uri": "/hotel-california-of-creative-writing/welcome-to-hotel-california-of-creative-writing/"
   },
   {
     "breadcrumb": "",
@@ -13,7 +13,7 @@ var relearn_search_index = [
     "description": "",
     "tags": null,
     "title": "Categories",
-    "uri": "/hotel-california-of-creative-writing/categories/index.html"
+    "uri": "/hotel-california-of-creative-writing/categories/"
   },
   {
     "breadcrumb": "",
@@ -21,6 +21,6 @@ var relearn_search_index = [
     "description": "",
     "tags": null,
     "title": "Tags",
-    "uri": "/hotel-california-of-creative-writing/tags/index.html"
+    "uri": "/hotel-california-of-creative-writing/tags/"
   }
 ]
