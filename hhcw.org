@@ -7,15 +7,16 @@
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :archetype "home"
 :END:
 This is the home page
-[[file:static/images/hccw.png]]
+#+hugo: {{< himg image="hccw" ext="png" title="Hotel California of Creative Writing">}}
+
 * DOCS
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: docs
 :EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 0
 :END:
-#+attr_html: :alt Emacs - my Hotel California :title Emacs - my Hotel California
-[[file:images/hotel-california.png]]
+
+#+hugo: {{< himg image="hotel-california" ext="png" title="Hotel California of Creative Writing">}}
 
 This is a detailed explanation of why Emacs is my Hotel California of creative writing. It shows how I have created a writing environment exactly how I want it to be, and why there—in my mind—is nothing out there that compares to it.
 #+begin_export html
@@ -37,9 +38,6 @@ It is my hope that, after reading this article, that  you start thinking of it a
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 1
 :END:
 *** Introduction
-:PROPERTIES:
-:CUSTOM_ID: emacs-introduction
-:END:
 #+begin_quote
 “I use emacs, which might be thought of as a thermonuclear word processor... the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer... emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”
 #+end_quote
@@ -51,15 +49,14 @@ It is my hope that, after reading this article, that  you start thinking of it a
 </div>
 #+end_export
 I can make Emacs fit my workflow rather than the other way around.
-#+attr_html: :alt Hackerman :title Hackerman :width 40%
-[[file:images/hackerman1.jpg]]
+
+#+hugo: {{< himg image="hackerman1" ext="jpg" title="Hackerman">}}
 
 Emacs is a LISP machine.
 *** Emacs basics
-:PROPERTIES:
-:CUSTOM_ID: emacs-basics
-:END:
-[[yt:RuiBsWQeeTs][Emacs Basic Movement and Editing]]
+
+#+hugo: {{< youtube RuiBsWQeeTs >}}
+
 It’s highly recommended to run Emacs without any customization a couple of times to learn how the basic Emacs commands work. We can do that by running Emacs with the ~Q~ command-line argument, like this: ~emacs -Q~. If you want—again, highly recommended—you can run the Emacs Tutorial by running ~C-h t~. Do the tutorial until you feel confident. Also, experiment in the Scratch buffer, like in the video tutorial above.
 #+begin_export html
 <br/>
@@ -102,15 +99,12 @@ And, before you ask, let me tell you my favorite Emacs command: ~C-o~ (/insert n
 <br/>
 #+end_export
 Now that you know a thing or two about Emacs, here’s another introductory video about Emacs as a text editor:
-[[yt:jPkIaqSh3cA][The Basics of Emacs as a Text Editor]]
+#+hugo: {{< youtube jPkIaqSh3cA >}}
 NB: He uses the ~<Esc>~ key as an alternative to ~<Control>~ like in ~<Esc> y~. May I suggest that you use ~C-y~ instead. Using the Escape key that way will conflict with the modal editing package Boon mentioned below./
 #+begin_export html
 <br/>
 #+end_export
 *** Doom-Emacs
-:PROPERTIES:
-:CUSTOM_ID: emacs-doom-emacs
-:END:
 [[https://github.com/hlissner/doom-emacs][Doom-Emacs]] is a minimalist modern Emacs distribution that is light and fast. It provides a rock-solid and highly configurable infrastructure to base an Emacs configuration on.
 #+begin_export html
 <br/>
@@ -118,9 +112,6 @@ NB: He uses the ~<Esc>~ key as an alternative to ~<Control>~ like in ~<Esc> y~. 
 I switched to Doom-Emacs after declaring Emacs Bankruptcy [fn:1], and I haven’t regretted it. It uses every trick in the book to optimize, and the install/upgrade/maintenance scripts are excellent. It provides infrastructure and a well thought out framework for creating your own, speedy Emacs configuration.
 [fn:1] When your InitFile gets so large that you really need to start over, then you have declared “.emacs bankruptcy”. [[https://www.emacswiki.org/emacs/DotEmacsBankruptcy][EmacsWiki: Dot Emacs Bankruptcy]]
 *** Notes about the Hotel California configuration
-:PROPERTIES:
-:CUSTOM_ID: emacs-notes-hotel-california
-:END:
 If you feel that you need to have at least a menu-bar, then you can turn it on/off by running this command: ~M-x menu-bar-mode~. It can be useful sometimes, especially when learning the Emacs ropes.
 
 * Org-mode
@@ -130,11 +121,7 @@ If you feel that you need to have at least a menu-bar, then you can turn it on/o
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 2
 :END:
 *** Introduction
-:PROPERTIES:
-:CUSTOM_ID: org-mode-introduction
-:END:
-#+attr_html: :alt Org-mode :title Org-mode :width 20%
-[[file:images/org-mode-unicorn.svg]]
+#+hugo: {{< himg image="org-mode-unicorn" ext="svg" title="Org-mode">}}
 #+begin_quote
 A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
 #+end_quote

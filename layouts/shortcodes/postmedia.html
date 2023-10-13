@@ -1,0 +1,11 @@
+<div class="layout">
+    <div class="layout__item layout__item--figure">
+        <figure>
+        <img src="/images/{{ .Get "image" }}" alt="{{ .Get "alt" }}" title=" {{ .Get "title" }}">
+        <figcaption><h4>{{ .Get "title" }}</h4></figcaption>
+        </figure>
+    </div>
+    <div class="layout__item layout__item--body">
+        <p>{{ .Inner }}</p>
+    </div>
+</div>

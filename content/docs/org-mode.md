@@ -5,9 +5,9 @@ draft = false
 weight = 2
 +++
 
-## Introduction {#org-mode-introduction}
+## Introduction {#introduction}
 
-{{< figure src="images/org-mode-unicorn.svg" alt="Org-mode" title="Org-mode" width="20%" >}}
+{{< himg image="org-mode-unicorn" ext="svg" title="Org-mode">}}
 
 > A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
 

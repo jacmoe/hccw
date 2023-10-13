@@ -1,0 +1,4 @@
+{{- $img := .Get "image" -}}
+{{- $ext := .Get "ext" -}}
+{{- $title := .Get "title" -}}
+<img alt="{{ $title }}" src="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" .Site.Home) }}images/{{ $img }}.{{ $ext }}"/>

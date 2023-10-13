@@ -5,7 +5,7 @@ draft = false
 weight = 1
 +++
 
-## Introduction {#emacs-introduction}
+## Introduction {#introduction}
 
 > “I use emacs, which might be thought of as a thermonuclear word processor... the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer... emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”
 
@@ -17,14 +17,15 @@ weight = 1
 
 I can make Emacs fit my workflow rather than the other way around.
 
-{{< figure src="images/hackerman1.jpg" alt="Hackerman" title="Hackerman" width="40%" >}}
+{{< himg image="hackerman1" ext="jpg" title="Hackerman">}}
 
 Emacs is a LISP machine.
 
 
 ## Emacs basics {#emacs-basics}
 
-[Emacs Basic Movement and Editing](RuiBsWQeeTs)
+{{< youtube RuiBsWQeeTs >}}
+
 It’s highly recommended to run Emacs without any customization a couple of times to learn how the basic Emacs commands work. We can do that by running Emacs with the `Q` command-line argument, like this: `emacs -Q`. If you want—again, highly recommended—you can run the Emacs Tutorial by running `C-h t`. Do the tutorial until you feel confident. Also, experiment in the Scratch buffer, like in the video tutorial above.
 
 <br/>
@@ -68,13 +69,15 @@ And, before you ask, let me tell you my favorite Emacs command: `C-o` (_insert n
 <br/>
 
 Now that you know a thing or two about Emacs, here’s another introductory video about Emacs as a text editor:
-[The Basics of Emacs as a Text Editor](jPkIaqSh3cA)
+
+{{< youtube jPkIaqSh3cA >}}
+
 NB: He uses the `<Esc>` key as an alternative to `<Control>` like in `<Esc> y`. May I suggest that you use `C-y` instead. Using the Escape key that way will conflict with the modal editing package Boon mentioned below./
 
 <br/>
 
 
-## Doom-Emacs {#emacs-doom-emacs}
+## Doom-Emacs {#doom-emacs}
 
 [Doom-Emacs](https://github.com/hlissner/doom-emacs) is a minimalist modern Emacs distribution that is light and fast. It provides a rock-solid and highly configurable infrastructure to base an Emacs configuration on.
 
@@ -83,7 +86,7 @@ NB: He uses the `<Esc>` key as an alternative to `<Control>` like in `<Esc> y`. 
 I switched to Doom-Emacs after declaring Emacs Bankruptcy&nbsp;[^fn:1], and I haven’t regretted it. It uses every trick in the book to optimize, and the install/upgrade/maintenance scripts are excellent. It provides infrastructure and a well thought out framework for creating your own, speedy Emacs configuration.
 
 
-## Notes about the Hotel California configuration {#emacs-notes-hotel-california}
+## Notes about the Hotel California configuration {#notes-about-the-hotel-california-configuration}
 
 If you feel that you need to have at least a menu-bar, then you can turn it on/off by running this command: `M-x menu-bar-mode`. It can be useful sometimes, especially when learning the Emacs ropes.
 

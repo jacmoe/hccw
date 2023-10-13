@@ -12,7 +12,7 @@ relativeURLs = true
   page = ["HTML", "RSS", "PRINT"]
 
 [params]
-  themeVariant = [ "zen-light", "zen-dark" ]
+  themeVariant = [ "zen-dark", "zen-light" ]
   disableExplicitIndexURLs = true
 
 [markup.goldmark.renderer]

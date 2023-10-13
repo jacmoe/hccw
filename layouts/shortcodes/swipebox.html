@@ -1,0 +1,17 @@
+{{- $img := .Get "image" -}}
+{{- $ext := .Get "ext" -}}
+{{- $title := .Get "title" -}}
+{{- $rel := .Get "rel" -}}
+{{- with .Parent -}}
+{{- $galdir := .Get "galdir" -}}
+    <a href="/gallery/{{ $galdir }}/{{ $img }}.{{ $ext }}" rel="{{ $rel }}" class="swipebox" caption="{{ $title }}" title="{{ $title }}">
+        <img alt="{{ $title }}" src="/gallery/{{ $galdir }}small/{{ $img }}.{{ $ext }}"/>
+    </a>
+{{- else -}}
+<figure>
+    <a href="/images/{{ $img }}.{{ $ext }}" rel="{{ $rel }}" class="swipebox" caption="{{ $title }}" title="{{ $title }}">
+        <img alt="{{ $title }}" src="/images/{{ $img }}_small.{{ $ext }}"/>
+    </a>
+    <figcaption><h4>{{ $title }}</h4></figcaption>
+</figure>
+{{- end -}}

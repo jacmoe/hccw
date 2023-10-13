@@ -6,4 +6,5 @@ archetype = "home"
 +++
 
 This is the home page
-![](/images/hccw.png)
+
+{{< himg image="hccw" ext="png" title="Hotel California of Creative Writing">}}
