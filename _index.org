@@ -1,9 +1,0 @@
-#+STARTUP: fold
-#+TITLE: Hotel California of Creative Writing
-#+hugo_base_dir: .
-#+hugo_section: .
-#+hugo_custom_front_matter: :archetype "home"
-#+begin_description
-lorem ipsum
-#+end_description
-[[file:static/images/hccw.png]]

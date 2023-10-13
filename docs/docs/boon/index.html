@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1+tip">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Boon :: Hotel California of Creative Writing">
+    <meta name="twitter:description" content="Introduction Boon is a modal editing package for Emacs that is ergonomic and designed to integrate well with existing Emacs infrastructure. That means that we can continue to use the standard Emacs keyboard shortcuts should we choose to do so, in addition to the features that Boon provides.
+Boon is designed so that the right hand takes care of movement, and the left hand do the actions. And great care is taken to ensure that the fingers never leave the home row.">
+    <meta property="og:title" content="Boon :: Hotel California of Creative Writing">
+    <meta property="og:description" content="Introduction Boon is a modal editing package for Emacs that is ergonomic and designed to integrate well with existing Emacs infrastructure. That means that we can continue to use the standard Emacs keyboard shortcuts should we choose to do so, in addition to the features that Boon provides.
+Boon is designed so that the right hand takes care of movement, and the left hand do the actions. And great care is taken to ensure that the fingers never leave the home row.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jacmoe.github.io/hotel-california-of-creative-writing/docs/boon/">
+    <meta property="article:section" content="DOCS :: Hotel California of Creative Writing">
+    <meta property="og:site_name" content="Hotel California of Creative Writing">
+    <title>Boon :: Hotel California of Creative Writing</title>
+    <link href="../../docs/boon/index.xml" rel="alternate" type="application/rss+xml" title="Boon :: Hotel California of Creative Writing">
+    <link href="../../docs/boon/index.print.html" rel="alternate" type="text/html" title="Boon :: Hotel California of Creative Writing">
+    <link href="../../images/logo.png?1697228119" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1697228119" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1697228119" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1697228119" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1697228119" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1697228119" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1697228119" rel="stylesheet">
+    <link href="../../css/fonts.css?1697228119" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1697228119" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1697228119" rel="stylesheet">
+    <link href="../../css/theme-zen-light.css?1697228119" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1697228119" rel="stylesheet">
+    <link href="../../css/print.css?1697228119" rel="stylesheet" media="print">
+    <link href="../../css/ie.css?1697228119" rel="stylesheet">
+    <script src="../../js/url.js?1697228119"></script>
+    <script src="../../js/variant.js?1697228119"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/jacmoe.github.io\/hotel-california-of-creative-writing/';
+      window.variants && variants.init( [ 'zen-light', 'zen-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="../../docs/boon/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#boon-introduction">Introduction</a></li>
+    <li><a href="#boon-layout">Layout</a></li>
+    <li><a href="#boon-movement">Movement</a></li>
+    <li><a href="#boon-editing">Editing</a>
+      <ul>
+        <li><a href="#boon-editing-inserting">Inserting</a></li>
+        <li><a href="#boon-editing-deleting">Deleting</a></li>
+        <li><a href="#boon-editing-replacing">Replacing</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../"><span itemprop="name">Hotel California of Creative Writing</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../docs/"><span itemprop="name">DOCS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Boon</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/boon/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)">
+                <i class="fa-fw fas fa-print"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/org-mode/" title="Org-mode (🡐)">
+                <i class="fa-fw fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/dictionaries-etc/" title="Dictionaries et cetera (🡒)">
+                <i class="fa-fw fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="boon">Boon</h1>
+
+<h2 id="boon-introduction">Introduction</h2>
+<p><a href="https://github.com/jyp/boon" target="_blank">Boon</a> is a modal editing package for Emacs that is ergonomic and designed to integrate well with existing Emacs infrastructure. That means that we can continue to use the standard Emacs keyboard shortcuts should we choose to do so, in addition to the features that Boon provides.</p>
+<br/>
+<p>Boon is designed so that the right hand takes care of movement, and the left hand do the actions. And great care is taken to ensure that the fingers never leave the home row. Important for touch typists!</p>
+<br/>
+<p>Boon is a modal editing system with two modes: Command mode and Insert mode. Command mode is the default mode, and where we perform movement and commands. Insert mode is the mode where the keyboard inserts letters as we type them (as opposed to perform commands).</p>
+<br/>
+<p>When in Command mode, we can switch to Insert mode by pressing <code>v</code>. The cursor changes shape and color to indicate that we are indeed in Insert mode. For convenience, pressing <code>S-v</code> will insert a line above the current line and place the cursor in it, and <code>C-v</code> will insert a line below. That often saves us from a couple of keystrokes.</p>
+<br/>
+<p>In Insert mode, we can exit it by pressing <code>&lt;Esc&gt;</code> or <code>C-;</code>. The cursor changes back to normal shape and color to indicate that pressing keys will no longer insert letters but perform commands. I’ve bound <code>boon-quit</code> to <code>C-;</code> because <code>&lt;Esc&gt;</code> is <strong>not</strong> on the home row, even if we rebind it to <code>&lt;Caps Lock&gt;</code>, a fairly common thing to do. The combination of <code>v</code> and <code>C-;</code> means that we don’t have to move our fingers at all, even when switching between the two modes at speed. Ergonomics is important.</p>
+<br/>
+<p><code>C-x</code> and <code>C-c</code> shortcuts are handled in Boon so that any command starting with <code>C-x</code> is simply <code>x</code>, and <code>C-c C-</code>  shortcuts are just <code>c</code>.</p>
+<br/>
+<p>Not all commands work as you would expect, however, so if we wanted to run <code>find-file</code> (<code>C-x C-f</code>) we will have to press <code>x C-f</code>, and not <code>x f</code> (<code>set-fill-column</code>). That’s because <code>set-fill-column</code> normally uses the shortcut <code>C-x f</code>, and there is no way to make a distinction between the two, <code>find-file</code> or <code>set-fill-column</code>. Luckily, there aren’t many exceptions like this.</p>
+<h2 id="boon-layout">Layout</h2>
+<p>Here’s how the keyboard layout looks like for Command mode using Boon:</p>
+<figure><img src="images/keyboard-layout.png"
+         alt="The Hotel California layout"/><figcaption>
+            <h4>The Hotel California layout</h4>
+        </figcaption>
+</figure>
+
+<p>The right-hand side of the keyboard is dedicated to moving around while the left-hand side is dedicated to issuing commands.</p>
+<h2 id="boon-movement">Movement</h2>
+<p><code>k l i o</code> are equivalent to the four arrow keys. <code>k</code> moves backward by one character, <code>l</code> moves forward by one character. <code>i</code> moves up by one line, <code>o</code> moves down by one line.</p>
+<p>The keys <code>j ;</code> moves by word: <code>j</code> backward by word, <code>;</code> forward by word.</p>
+<p><code>u</code> moves to the beginning of the line, <code>p</code> takes you to the end of the line.</p>
+<p>By using the SHIFT key, we can move by sentence: <code>K</code> moves backward by sentence, <code>L</code> moves forward. Similarly, <code>I</code> and <code>O</code> move by paragraph.</p>
+<p>You can jump several steps at once by using a number prefix. For example, <code>5 i</code> will move up five lines, <code>8 j</code> will move back eight words.</p>
+<p>The largest jumps are provided by <code>&lt;</code> and <code>&gt;</code> and will move to the beginning and end of the buffer, respectively.</p>
+<p>For convenient navigation we can use <code>h</code> to jump (hop) to a character. For example, if we wanted to navigate to the word <em>”character”</em>, we could enter <code>h c</code> and all occurrences of <em>c</em> is highlighted:</p>
+<figure><img src="images/boon-hop.png"
+         alt="Hop to a character" width="60%"/><figcaption>
+            <h4>Hop to a character</h4>
+        </figcaption>
+</figure>
+
+<br/>
+<p>Now, if we press <code>g</code> we will land on <em>”character”</em>.</p>
+<h2 id="boon-editing">Editing</h2>
+<h3 id="boon-editing-inserting">Inserting</h3>
+<p>v</p>
+<p>quote</p>
+<h3 id="boon-editing-deleting">Deleting</h3>
+<p>Deleting text is mostly done with <code>d</code>. It takes an argument which can be either a movement command or a region specifier.</p>
+<p>When deleting a word under the cursor we are often left with an annoying extra space. We can avoid that by using the <em>select-with-spaces</em> modifier, <code>v</code>, when deleting a word. So, instead of <code>d w</code> to delete a word, we can do <code>d v w</code> to delete the word and the extra space.</p>
+<h3 id="boon-editing-replacing">Replacing</h3>
+<p>We can kill and switch to insert state at the same time by using the <em>replace</em> command, <code>r</code> instead of <code>d</code>. It works exactly like <code>d</code> except that it enters into insert mode. It is a convenience that saves you from having to press <code>v</code> after <code>d</code>.</p>
+<p>Often, it is useful to be able to replace a single character, and <code>t</code> is used for that purpose. Simply place the point on the character to replace and press <code>t</code> followed by the replacement character.</p>
+<p>Another typical character replacement is change of case. The <code>`</code> key toggles between title, upper, and lower case.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" href="../../">
+            <img src="../../images/logo.png">
+          </a>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="../../js/auto-complete.js?1697228119" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1697228119" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1697228119" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1697228119" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1697228119" defer></script>
+        <script src="../../js/search.js?1697228119" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="../../"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/docs/" class="parent "><a class="padding" href="../../docs/">DOCS</a><ul id="R-subsections-2f67fdc9a362fd86f1cfd4450ed56551" class="morespace collapsible-menu">
+          <li data-nav-id="/docs/emacs/" class=""><a class="padding" href="../../docs/emacs/">Emacs</a></li>
+          <li data-nav-id="/docs/org-mode/" class=""><a class="padding" href="../../docs/org-mode/">Org-mode</a></li>
+          <li data-nav-id="/docs/boon/" class="active"><a class="padding" href="../../docs/boon/">Boon</a></li>
+          <li data-nav-id="/docs/dictionaries-etc/" class=""><a class="padding" href="../../docs/dictionaries-etc/">Dictionaries et cetera</a></li>
+          <li data-nav-id="/docs/tracking-progress/" class=""><a class="padding" href="../../docs/tracking-progress/">Tracking progress</a></li>
+          <li data-nav-id="/docs/organize-the-writing/" class=""><a class="padding" href="../../docs/organize-the-writing/">Organize the writing</a></li>
+          <li data-nav-id="/docs/capturing-thoughts/" class=""><a class="padding" href="../../docs/capturing-thoughts/">Capturing thoughts</a></li>
+          <li data-nav-id="/docs/saving-work/" class=""><a class="padding" href="../../docs/saving-work/">Saving the work</a></li>
+          <li data-nav-id="/docs/exporting/" class=""><a class="padding" href="../../docs/exporting/">Exporting</a></li>
+          <li data-nav-id="/docs/creature-comforts/" class=""><a class="padding" href="../../docs/creature-comforts/">Creature comforts</a></li>
+          <li data-nav-id="/docs/org-roam/" class=""><a class="padding" href="../../docs/org-roam/">Org-roam</a></li>
+          <li data-nav-id="/docs/other-things/" class=""><a class="padding" href="../../docs/other-things/">Other things</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-zen-light" value="zen-light" selected>Zen Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="../../js/clipboard.min.js?1697228119" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1697228119" defer></script>
+    <script src="../../js/theme.js?1697228119" defer></script>
+  </body>
+</html>

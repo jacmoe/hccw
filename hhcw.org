@@ -1,10 +1,18 @@
 #+TITLE: Hotel California of Creative Writing
-#+SETUPFILE: white_clean.theme
-This is currently a work in progress
-
-** Introduction
+#+hugo_base_dir: .
+* Hotel California of Creative Writing
 :PROPERTIES:
-:CUSTOM_ID: introduction
+:EXPORT_HUGO_SECTION: .
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :archetype "home"
+:END:
+This is the home page
+[[file:static/images/hccw.png]]
+* DOCS
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 0
 :END:
 #+attr_html: :alt Emacs - my Hotel California :title Emacs - my Hotel California
 [[file:images/hotel-california.png]]
@@ -21,9 +29,12 @@ It is my hope that, after reading this article, that  you start thinking of it a
 #+begin_export html
 <br/>
 #+end_export
-** Emacs
+
+* Emacs
 :PROPERTIES:
-:CUSTOM_ID: emacs
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: emacs
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 1
 :END:
 *** Introduction
 :PROPERTIES:
@@ -111,9 +122,12 @@ I switched to Doom-Emacs after declaring Emacs Bankruptcy [fn:1], and I haven’
 :CUSTOM_ID: emacs-notes-hotel-california
 :END:
 If you feel that you need to have at least a menu-bar, then you can turn it on/off by running this command: ~M-x menu-bar-mode~. It can be useful sometimes, especially when learning the Emacs ropes.
-** Org-mode
+
+* Org-mode
 :PROPERTIES:
-:CUSTOM_ID: org-mode
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: org-mode
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 2
 :END:
 *** Introduction
 :PROPERTIES:
@@ -276,9 +290,12 @@ In Org-mode tables are made of ASCII characters, but it feels like magic in acti
 See [[https://orgmode.org/manual/Tables.html][Tables (The Org Manual)]] for more details.
 
 We’ll see more of what Org-mode tables can do later on in this article, when discussing clock-tables and when discussing Org-tracktable.
-** Boon
+
+* Boon
 :PROPERTIES:
-:CUSTOM_ID: boon
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: boon
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 3
 :END:
 *** Introduction
 :PROPERTIES:
@@ -374,10 +391,11 @@ Often, it is useful to be able to replace a single character, and =t= is used fo
 
 Another typical character replacement is change of case. The =`= key toggles between title, upper, and lower case.
 
-
-** Dictionaries et cetera
+* Dictionaries et cetera
 :PROPERTIES:
-:CUSTOM_ID: dictionaries-etc
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: dictionaries-etc
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 4
 :END:
 *** Define-word
 :PROPERTIES:
@@ -542,9 +560,12 @@ Bookmarks are special buffer position registers that are persisted (saved) betwe
 Click the Bookmark Menu in the status bar to see what commands are available.
 
 Use =q= to close the bookmark list buffer.
-** Tracking progress
+
+* Tracking progress
 :PROPERTIES:
-:CUSTOM_ID: tracking-progress
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: tracking-progress
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 5
 :END:
 *** Track-table
 :PROPERTIES:
@@ -636,9 +657,11 @@ Having set it all up, we can now run ~org-columns~ by pressing ~c x c~:
 
 Pres ~q~ to exit.
 
-** Organize the writing
+* Organize the writing
 :PROPERTIES:
-:CUSTOM_ID: organize-the–writing
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: organize-the-writing
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 6
 :END:
 *** All in one
 :PROPERTIES:
@@ -650,13 +673,17 @@ Everything in one big file.
 :CUSTOM_ID: organize-the–writing-master-document
 :END:
 Transclusion.
-** Capturing thoughts
+* Capturing thoughts
 :PROPERTIES:
-:CUSTOM_ID: capturing-thoughts
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: capturing-thoughts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 7
 :END:
-** Saving the work
+* Saving the work
 :PROPERTIES:
-:CUSTOM_ID: saving-the-work
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: saving-work
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 8
 :END:
 *** Magit
 :PROPERTIES:
@@ -674,9 +701,11 @@ Sometimes you want to know what changes you have made to a buffer since your las
 
 
 Emacs will ask you for the file on disk, and then open a diff buffer where you can examine the differences. Use ~x o~ (o for ‘other’) to go to the diff buffer, if you’re not already in it. Using movement commands, like ~i o k l~, etc. And then, when done, close the buffer by pressing ~x 0~ (zero), or ~x 1~ if you’re not in the diff buffer.
-** Exporting
+* Exporting
 :PROPERTIES:
-:CUSTOM_ID: exporting
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: exporting
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 9
 :END:
 *** Introduction
 :PROPERTIES:
@@ -694,9 +723,11 @@ Emacs will ask you for the file on disk, and then open a diff buffer where you c
 :PROPERTIES:
 :CUSTOM_ID: exporting-odt
 :END:
-** Creature comforts
+* Creature comforts
 :PROPERTIES:
-:CUSTOM_ID: creature-comforts
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: creature-comforts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 10
 :END:
 *** Themes and fonts
 :PROPERTIES:
@@ -712,17 +743,21 @@ Emacs will ask you for the file on disk, and then open a diff buffer where you c
 :PROPERTIES:
 :CUSTOM_ID: creature-comforts-scroll-center-cursor-mode
 :END:
-** Org-roam
+* Org-roam
 :PROPERTIES:
-:CUSTOM_ID: org-roam
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: org-roam
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 11
 :END:
 *** Org-roam UI
 :PROPERTIES:
 :CUSTOM_ID: org-roam-org-roam-ui
 :END:
-** Other things
+* Other things
 :PROPERTIES:
-:CUSTOM_ID: other-things
+:EXPORT_HUGO_SECTION: docs
+:EXPORT_FILE_NAME: other-things
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 12
 :END:
 *** Journaling
 :PROPERTIES:
@@ -797,27 +832,6 @@ It will ask you to choose your browser—Chromium, Chrome, Firefox, or Brave—a
 :END:
 Use nov.el to read ebooks.
 
-** Online Resources
-:PROPERTIES:
-:CUSTOM_ID: online-resources
-:END:
-[[https://www.youtube.com/watch?v=FtieBc3KptU][Emacs For Writers - YouTube]]
-
-[[https://emacsconf.org/2020/talks/03/][EmacsConf - 2020 - talks - Idea to Novel Superstructure: Emacs for Writing]]
-
-[[https://www.linuxfordevices.com/tutorials/linux/emacs-editor-tutorial][Emacs Editor Tutorial - An Absolute Beginners Reference - LinuxForDevices]]
-
-[[https://www.gnu.org/software/emacs/tour/][GNU Emacs - Guided Tour - GNU Project]]
-
-[[https://www.youtube.com/watch?v=SzA2YODtgK4][Getting Started With Org Mode - YouTube]]
-
-[[https://github.com/yjwen/org-reveal/][yjwen/org-reveal: Exports Org-mode contents to Reveal.js HTML presentation.]]
-
-** Conclusion
-:PROPERTIES:
-:CUSTOM_ID: conclusion
-:END:
-Write the conclusion
 
 #  LocalWords:  SETUPFILE attr html br IWE emacs memoranda monospaced wc todo
 #  LocalWords:  clocktable Transclusion Magit UI Zotero BetterBibtex Bibtex CSL

@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/welcome-to-hotel-california-of-creative-writing/</loc>
-    <lastmod>2023-10-12T21:45:00+02:00</lastmod>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/emacs/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-mode/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/boon/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/dictionaries-etc/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/tracking-progress/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/organize-the-writing/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/capturing-thoughts/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/saving-work/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/exporting/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/creature-comforts/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-roam/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/other-things/</loc>
   </url>
   <url>
     <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/categories/</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/</loc>
   </url>
   <url>
     <loc>https://jacmoe.github.io/hotel-california-of-creative-writing/</loc>

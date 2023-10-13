@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DOCS on Hotel California of Creative Writing</title>
+    <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/</link>
+    <description>Recent content in DOCS on Hotel California of Creative Writing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jacmoe.github.io/hotel-california-of-creative-writing/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/emacs/</guid>
+      <description>Introduction “I use emacs, which might be thought of as a thermonuclear word processor&amp;hellip; the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer&amp;hellip; emacs outshines all other editing software in approximately the same way that the noonday sun does the stars.</description>
+    </item>
+    <item>
+      <title>Org-mode</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-mode/</guid>
+      <description>Introduction Org-mode A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
+Org-mode is based on outline-mode which is again based on text-mode, and is both a markup language, an organizer (GTD), and an out-liner, and there are some people who live their entire lives in Org-mode.
+Here’s a small demo of Org-mode in action (may I suggest that you turn off the sound for this one): Emacs Org Mode Demo 2021 Here is a nerdy blog post about why Org-mode is a great markup language: Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text</description>
+    </item>
+    <item>
+      <title>Boon</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/boon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/boon/</guid>
+      <description>Introduction Boon is a modal editing package for Emacs that is ergonomic and designed to integrate well with existing Emacs infrastructure. That means that we can continue to use the standard Emacs keyboard shortcuts should we choose to do so, in addition to the features that Boon provides.
+Boon is designed so that the right hand takes care of movement, and the left hand do the actions. And great care is taken to ensure that the fingers never leave the home row.</description>
+    </item>
+    <item>
+      <title>Dictionaries et cetera</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/dictionaries-etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/dictionaries-etc/</guid>
+      <description>Define-word Quick word definition Dictionary server Dictionary server lookup Webster Look up word in Merriam-Webster Powerthesaurus Synonym lookup Sentences lookup Prose linting Prose linting with Vale Use C-c t f to toggle flycheck.
+The Vale syntax checker will not check inside headings tagged with noexport. Outside of the noexport sections we can use these comments to turn Vale off and on:
+This is checked by Vale. # vale off This is not going to be checked by Vale.</description>
+    </item>
+    <item>
+      <title>Tracking progress</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/tracking-progress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/tracking-progress/</guid>
+      <description>Track-table Track-table keeps track of words written per day Clocking time c x i to clock in. c x o to clock out. c x q to cancel a clock. There is also the option of starting a 20 minute Pomodoro session, by pressing B.
+Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this: :LOGBOOK: CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&amp;gt; 0:01 CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&amp;gt; 0:30 CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&amp;gt; 0:10 :END:We can generate clock report table by executing C-c l c R or M-x org-clock-report.</description>
+    </item>
+    <item>
+      <title>Organize the writing</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/organize-the-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/organize-the-writing/</guid>
+      <description>All in one Everything in one big file.
+Master document Transclusion.</description>
+    </item>
+    <item>
+      <title>Capturing thoughts</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/capturing-thoughts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/capturing-thoughts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saving the work</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/saving-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/saving-work/</guid>
+      <description>Magit Prose linting with Vale Unsaved changes Sometimes you want to know what changes you have made to a buffer since your last save. Since you haven’t saved the file yet, Magit can’t help you, so you need something else. Fortunately, we can use Emacs’ diff-buffer-with-file, mapped to C-d.
+Using diff to see the difference between buffer and file Emacs will ask you for the file on disk, and then open a diff buffer where you can examine the differences.</description>
+    </item>
+    <item>
+      <title>Exporting</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/exporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/exporting/</guid>
+      <description>Introduction HTML to E-book PDF via LaTeX Open Document Format </description>
+    </item>
+    <item>
+      <title>Creature comforts</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/creature-comforts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/creature-comforts/</guid>
+      <description>Themes and fonts Zen-mode and transparency Zen-mode with transparency turned on Scroll-center-cursor-mode </description>
+    </item>
+    <item>
+      <title>Org-roam</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-roam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/org-roam/</guid>
+      <description>Org-roam UI </description>
+    </item>
+    <item>
+      <title>Other things</title>
+      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/other-things/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/other-things/</guid>
+      <description>Journaling Blogging Bibliography Zotero Zotero is used to gather and store and export the citations/references, by the use of the Better-Bibtex plugin.
+After installing Zotero itself, the plugin can be installed by following this guide: . When downloading using Firefox, I had to right-click and “save as” because otherwise Firefox thought I was trying to install a Firefox add-on due to the file-extension being the same. When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted Bibtex file that we need in order to use it from Emacs.</description>
+    </item>
+  </channel>
+</rss>
