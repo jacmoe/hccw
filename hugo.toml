@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Hotel California of Creative Writing"
 publishDir = "docs"
 theme = "hugo-theme-relearn"
+canonifyURLs = true
+relativeURLs = true
 
 [outputs]
   home = ["HTML", "RSS", "PRINT", "SEARCH"]
