@@ -1,6 +1,6 @@
 var relearn_search_index = [
   {
-    "breadcrumb": "",
+    "breadcrumb": "Hotel California of Creative Writing",
     "content": "This is a small test\n",
     "description": "lorem ipsum",
     "tags": null,
@@ -8,7 +8,7 @@ var relearn_search_index = [
     "uri": "/welcome-to-hotel-california-of-creative-writing/"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Hotel California of Creative Writing",
     "content": "",
     "description": "",
     "tags": null,
@@ -17,6 +17,14 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
+    "content": " ",
+    "description": "lorem ipsum",
+    "tags": null,
+    "title": "Hotel California of Creative Writing",
+    "uri": "/"
+  },
+  {
+    "breadcrumb": "Hotel California of Creative Writing",
     "content": "",
     "description": "",
     "tags": null,
