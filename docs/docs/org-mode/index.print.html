@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1+tip">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Org-mode :: Hotel California of Creative Writing">
+    <meta name="twitter:description" content="Introduction A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
+Org-mode is based on outline-mode which is again based on text-mode, and is both a markup language, an organizer (GTD), and an out-liner, and there are some people who live their entire lives in Org-mode.
+Here’s a small demo of Org-mode in action (may I suggest that you turn off the sound for this one): Emacs Org Mode Demo 2021 Here is a nerdy blog post about why Org-mode is a great markup language: Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text">
+    <meta property="og:title" content="Org-mode :: Hotel California of Creative Writing">
+    <meta property="og:description" content="Introduction A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
+Org-mode is based on outline-mode which is again based on text-mode, and is both a markup language, an organizer (GTD), and an out-liner, and there are some people who live their entire lives in Org-mode.
+Here’s a small demo of Org-mode in action (may I suggest that you turn off the sound for this one): Emacs Org Mode Demo 2021 Here is a nerdy blog post about why Org-mode is a great markup language: Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jacmoe.github.io/hccw/docs/org-mode/">
+    <meta property="article:section" content="DOCS :: Hotel California of Creative Writing">
+    <meta property="og:site_name" content="Hotel California of Creative Writing">
+    <title>Org-mode :: Hotel California of Creative Writing</title>
+    <link href="https://jacmoe.github.io/hccw/docs/org-mode/" rel="canonical" type="text/html" title="Org-mode :: Hotel California of Creative Writing">
+    <link href="../../docs/org-mode/index.xml" rel="alternate" type="application/rss+xml" title="Org-mode :: Hotel California of Creative Writing">
+    <link href="../../images/logo.png?1697232241" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1697232241" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1697232241" rel="stylesheet">
+    <link href="../../css/fonts.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1697232241" rel="stylesheet">
+    <link href="../../css/theme-zen-dark.css?1697232241" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1697232241" rel="stylesheet">
+    <link href="../../css/print.css?1697232241" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1697232241" rel="stylesheet">
+    <link href="../../css/ie.css?1697232241" rel="stylesheet">
+    <script src="../../js/url.js?1697232241"></script>
+    <script src="../../js/variant.js?1697232241"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/jacmoe.github.io\/hccw/';
+      window.variants && variants.init( [ 'zen-dark', 'zen-light' ] );
+    </script>
+  </head>
+  <body class="mobile-support print" data-url="../../docs/org-mode/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../"><span itemprop="name">Hotel California of Creative Writing</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../docs/"><span itemprop="name">DOCS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Org-mode</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="org-mode">Org-mode</h1>
+
+<h2 id="introduction">Introduction</h2>
+<img alt="Org-mode" src="../../images/org-mode-unicorn.svg"/>
+
+<blockquote>
+<p>A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.</p>
+</blockquote>
+<br/>
+<p><a href="https://orgmode.org/" target="_blank">Org-mode</a> is based on outline-mode which is again based on text-mode, and is both a markup language, an organizer (GTD), and an out-liner, and there are some people who live their entire lives in Org-mode.</p>
+<br/>
+<p>Here’s a small demo of Org-mode in action (<em>may I suggest that you turn off the sound for this one</em>):
+<a href="../../docs/org-mode/hnMntOQjs7Q">Emacs Org Mode Demo 2021</a>
+Here is a nerdy blog post about why Org-mode is a great markup language: <a href="https://karl-voit.at/2017/09/23/orgmode-as-markup-only/" target="_blank">Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text</a></p>
+<ul>
+<li>Official format</li>
+<li>Out-liner</li>
+<li>Organizer</li>
+<li>Extendable</li>
+<li>One hundred percent pure text</li>
+</ul>
+<h2 id="org-mode-standard-markup">Standard markup</h2>
+<ul>
+<li><code>*bold*</code> <strong>bold</strong></li>
+<li><code>/italic/</code> <em>italic</em></li>
+<li><code>_underline_</code> <span class="underline">underline</span></li>
+<li><code>~code~</code>  <code>code</code></li>
+<li><code>=monospaced=</code> <code>monospaced</code></li>
+<li><code># comment</code> anything after a hash sign and a space will not be exported</li>
+</ul>
+<h2 id="org-mode-headings">Headings (structure)</h2>
+<p>A heading is one or more asterisks followed by a space and some text.</p>
+<ul>
+<li><code>* heading</code> level 1 heading</li>
+<li><code>** heading</code> level 2 heading</li>
+<li><code>*** heading</code> level 3 heading, and so on</li>
+<li><code>* todo heading</code> a heading with a todo</li>
+<li><code>* heading :tag:</code> heading with a tag</li>
+<li><code>* heading :tag1:tag2:</code> heading with two tags</li>
+<li><code>* heading :@category:</code> heading with a category</li>
+</ul>
+<p>Press <code>C-&lt;Enter&gt;</code> to insert a new heading at the same level as the heading you’re in.</p>
+<p><code>M-&lt;up&gt;</code> and <code>M-&lt;down&gt;</code> will move a heading up and down.</p>
+<p><code>M-&lt;left&gt;</code> and <code>M-&lt;right&gt;</code> will promote/demote a heading.</p>
+<p><code>c n</code> and <code>c p</code> will navigate to next and previous heading, respectively.</p>
+<p><code>c u</code> navigates up to the parent heading, if any.</p>
+<p><code>S-&lt;right&gt;</code> and <code>S-&lt;left&gt;</code> cycles through todo states for a heading, ie from <em>draft</em> to <em>revise</em> to <em>done</em>.</p>
+<p><code>c q</code> can be used to set tags/categories for a heading. (<code>c c</code> also works, when standing on the actual heading)</p>
+<h2 id="org-mode-lists">Lists</h2>
+<p>A list item is a dash (-) followed by a space and some text.</p>
+<ul>
+<li><code>- list item</code> unnumbered list item</li>
+<li><code>1 list item</code> numbered list item ()</li>
+<li><code>- [ ] list item</code> list item with unchecked check box</li>
+<li><code>- [X] list item</code> list item with checked check box</li>
+</ul>
+<p>Press <code>C-&lt;Enter&gt;</code> to insert a new list item at the same level as the heading you’re in.</p>
+<p><code>M-&lt;up&gt;</code> and <code>M-&lt;down&gt;</code> will move a list item up and down.</p>
+<p><code>M-&lt;left&gt;</code> and <code>M-&lt;right&gt;</code> will demote/promote a list item.</p>
+<p><code>S-&lt;left&gt;</code> and <code>S-&lt;right&gt;</code> will cycle through different list styles, provided that the point is placed on the list item symbol (by default a <code>-</code>))</p>
+<h2 id="org-mode-document-options">Document options</h2>
+<h3 id="org-mode-document-options-toc">TOC</h3>
+<p><code>#+OPTIONS: toc:nil</code> turns off the insertion of an auto-generated Table Of Contents (TOC) upon export.
+You can then use <code>#+toc: headlines 2</code> to manually insert a table of contents into the document.</p>
+<h2 id="org-mode-links">Links</h2>
+<ul>
+<li><code>[[link][description]]</code> link with description (use <code>c l</code> to insert)</li>
+<li><code>[[file:link_to_file]]</code> inline image is a file link <strong>without</strong> description</li>
+</ul>
+<p>Use <code>c l</code> to insert a link, or to edit a link. Use <code>c o</code> to open a link.</p>
+<p>If the link is a file link to an image, and without a description, it is an inline image. To toggle the rendering of inline images, you can press <code>c &lt;TAB&gt;</code>.</p>
+<h2 id="org-mode-footnote-links">Footnote-links</h2>
+<ul>
+<li><code>[fn:1: this is an inline, numbered footnote]</code></li>
+<li><code>[fn:name: named, inline footnote]</code></li>
+<li><code>[fn:: anonymous, inline footnote]</code></li>
+</ul>
+<p>For more information about footnotes, see <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="org-mode-special-blocks">Special blocks</h2>
+<p>In addition to the standard markup, Org-mode has special blocks. Use <code>C-c C-,</code> to insert a block.</p>
+<div title="Special blocks">
+<img src="../../docs/org-mode/images/orgmode-blocks.png" alt="Special blocks" title="Special blocks" />
+For example, choosing “comment” as a block type will result in the following being inserted in the document:
+</div>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">#+begin_comment
+#+end_comment</code></pre></div><p>The “verse” block is useful for when you want to have a piece of poetry and not have Emacs mess with the formatting.</p>
+<p>Special blocks is a good way to extend the markup, and—of course—you can define your own special blocks.</p>
+<h2 id="org-mode-noexport-tags">Noexport tags</h2>
+<p>The <code>:noexport:</code> tag tells Org-mode that the contents—including any children—of a section is not to be exported. Useful for when you keep your work in one single file, including sections for things like research, notes, and character studies.</p>
+<h2 id="org-mode-ignore-tags">Ignore tags</h2>
+<p>The <code>:ignore:</code> tag instructs Org-mode to export the contents of a heading section, but not the heading itself. That’s useful when we organize your outline/document in chapters and scenes, but don’t want the exported text to be partitioned with scene headings. Having the text partitioned using headings allows us to rearrange those sections of the document—promoting, demoting, moving up and down—and we wouldn’t be able to do that if the text was not organized in an outline. Or, put another way: the <code>:ignore:</code> tag allows us to keep the outline to ourselves.</p>
+<h2 id="org-mode-tables">Tables</h2>
+<p>In Org-mode tables are made of ASCII characters, but it feels like magic in action.</p>
+<p><a href="../../docs/org-mode/5vGGgfs0q3k">Using Emacs episode 54 - Org Tables</a></p>
+<p>See <a href="https://orgmode.org/manual/Tables.html" target="_blank">Tables (The Org Manual)</a> for more details.</p>
+<p>We’ll see more of what Org-mode tables can do later on in this article, when discussing clock-tables and when discussing Org-tracktable.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://orgmode.org/manual/Creating-Footnotes.html" target="_blank">Creating Footnotes (The Org Manual)</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1697232241" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1697232241" defer></script>
+    <script src="../../js/theme.js?1697232241" defer></script>
+  </body>
+</html>

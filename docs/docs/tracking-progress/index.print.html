@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1+tip">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tracking progress :: Hotel California of Creative Writing">
+    <meta name="twitter:description" content="Track-table Track-table keeps track of words written per day Clocking time c x i to clock in. c x o to clock out. c x q to cancel a clock. There is also the option of starting a 20 minute Pomodoro session, by pressing B.
+Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this: :LOGBOOK: CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&gt; 0:01 CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&gt; 0:30 CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&gt; 0:10 :END:We can generate clock report table by executing C-c l c R or M-x org-clock-report.">
+    <meta property="og:title" content="Tracking progress :: Hotel California of Creative Writing">
+    <meta property="og:description" content="Track-table Track-table keeps track of words written per day Clocking time c x i to clock in. c x o to clock out. c x q to cancel a clock. There is also the option of starting a 20 minute Pomodoro session, by pressing B.
+Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this: :LOGBOOK: CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&gt; 0:01 CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&gt; 0:30 CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&gt; 0:10 :END:We can generate clock report table by executing C-c l c R or M-x org-clock-report.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jacmoe.github.io/hccw/docs/tracking-progress/">
+    <meta property="article:section" content="DOCS :: Hotel California of Creative Writing">
+    <meta property="og:site_name" content="Hotel California of Creative Writing">
+    <title>Tracking progress :: Hotel California of Creative Writing</title>
+    <link href="https://jacmoe.github.io/hccw/docs/tracking-progress/" rel="canonical" type="text/html" title="Tracking progress :: Hotel California of Creative Writing">
+    <link href="../../docs/tracking-progress/index.xml" rel="alternate" type="application/rss+xml" title="Tracking progress :: Hotel California of Creative Writing">
+    <link href="../../images/logo.png?1697232241" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1697232241" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1697232241" rel="stylesheet">
+    <link href="../../css/fonts.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1697232241" rel="stylesheet">
+    <link href="../../css/theme-zen-dark.css?1697232241" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1697232241" rel="stylesheet">
+    <link href="../../css/print.css?1697232241" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1697232241" rel="stylesheet">
+    <link href="../../css/ie.css?1697232241" rel="stylesheet">
+    <script src="../../js/url.js?1697232241"></script>
+    <script src="../../js/variant.js?1697232241"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/jacmoe.github.io\/hccw/';
+      window.variants && variants.init( [ 'zen-dark', 'zen-light' ] );
+    </script>
+  </head>
+  <body class="mobile-support print" data-url="../../docs/tracking-progress/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../"><span itemprop="name">Hotel California of Creative Writing</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../docs/"><span itemprop="name">DOCS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tracking progress</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="tracking-progress">Tracking progress</h1>
+
+<h2 id="tracking-progress-track-table">Track-table</h2>
+<figure><img src="../../docs/tracking-progress/images/tracktable.png"
+         alt="Track-table keeps track of words written per day"/><figcaption>
+            <h4>Track-table keeps track of words written per day</h4>
+        </figcaption>
+</figure>
+
+<h2 id="tracking-progress-clocking-time">Clocking time</h2>
+<p><code>c x i</code> to clock in. <code>c x o</code> to clock out. <code>c x q</code> to cancel a clock.
+There is also the option of starting a 20 minute Pomodoro session, by pressing <code>B</code>.</p>
+<div title="Pomodoro session">
+<img src="../../docs/tracking-progress/images/pomodoro.png" alt="Pomodoro session" title="Pomodoro session" />
+Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this:
+</div>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">:LOGBOOK:
+CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&gt;  0:01
+CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&gt;  0:30
+CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&gt;  0:10
+:END:</code></pre></div><p>We can generate clock report table by executing <code>C-c l c R</code> or <code>M-x org-clock-report</code>.
+The following will be inserted at point, depending on the logbooks in the current document:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">#+BEGIN: clocktable :scope subtree :maxlevel 2
+#+CAPTION: Clock summary at [2022-10-23 søn 09:56]
+| Headline   | Time |
+|------------+------|
+| *Total time* | *0:41* |
+|------------+------|
+#+END:</code></pre></div><p>A clocktable can be configured, for example, to show time clocked until now, like this:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">#+BEGIN: clocktable :maxlevel 3 :scope file :block untilnow</code></pre></div><div title="Time clocked in total">
+<img src="../../docs/tracking-progress/images/clocktable-master.png" alt="Time clocked in total" title="Time clocked in total" />
+Time clocked today:
+</div>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">#+BEGIN: clocktable :maxlevel 3 :scope file :block today</code></pre></div><p>Time clocked yesterday:</p>
+<div class="wrap-code highlight"><pre tabindex="0"><code class="language-nil" data-lang="nil">#+BEGIN: clocktable :maxlevel 3 :scope file :block yesterday</code></pre></div><p>To update a clocktable, simply place the point somewhere in the <code>BEGIN</code> line, and press <code>c c</code>.</p>
+<p>For more on clocking time, see <a href="https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html" target="_blank">Clocking time with Org-mode</a>.</p>
+<p>Often when writing, our progress can’t always be measured in words, so time spent is a good alternative.</p>
+<h2 id="tracking-progress-org-analyzer">Org-analyzer</h2>
+<h2 id="tracking-progress-org-habit-streak-count">Org-habit streak count</h2>
+<h2 id="tracking-progress-words-per-heading">Words per heading</h2>
+<p>Using <code>org-wc</code>.</p>
+<figure><img src="../../docs/tracking-progress/images/org-wc.png"
+         alt="Running M-x org-wc-display shows word count per heading"/><figcaption>
+            <h4>Running M-x org-wc-display shows word count per heading</h4>
+        </figcaption>
+</figure>
+
+<h2 id="tracking-progress-column-view">Column view</h2>
+<p>Column view is a good way to view properties of headers. While we can view todo status, categories, tags, time logged, and other standard properties, we can add our own, custom properties, and this is where it gets real interesting for creative writers.
+We can easily add properties to a heading by running <code>C-c C-x p</code>:</p>
+<figure><img src="../../docs/tracking-progress/images/properties-actions.png"
+         alt="Adding properties to a heading"/><figcaption>
+            <h4>Adding properties to a heading</h4>
+        </figcaption>
+</figure>
+
+<p>Now we can configure the <code>COLUMNS</code> special property, which will be inherited by child headings:</p>
+<figure><img src="../../docs/tracking-progress/images/columns-source.png"
+         alt="Setting up columns with properties"/><figcaption>
+            <h4>Setting up columns with properties</h4>
+        </figcaption>
+</figure>
+
+<p>See <a href="https://orgmode.org/worg/org-tutorials/org-column-view-tutorial.html" target="_blank">Org column view tutorial</a> for details.</p>
+<p>Having set it all up, we can now run <code>org-columns</code> by pressing <code>c x c</code>:</p>
+<figure><img src="../../docs/tracking-progress/images/columns.png"
+         alt="Column view"/><figcaption>
+            <h4>Column view</h4>
+        </figcaption>
+</figure>
+
+<p>Pres <code>q</code> to exit.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1697232241" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1697232241" defer></script>
+    <script src="../../js/theme.js?1697232241" defer></script>
+  </body>
+</html>

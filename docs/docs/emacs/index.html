@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.22.1+tip">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Emacs :: Hotel California of Creative Writing">
+    <meta name="twitter:description" content="Introduction “I use emacs, which might be thought of as a thermonuclear word processor&hellip; the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer&hellip; emacs outshines all other editing software in approximately the same way that the noonday sun does the stars.">
+    <meta property="og:title" content="Emacs :: Hotel California of Creative Writing">
+    <meta property="og:description" content="Introduction “I use emacs, which might be thought of as a thermonuclear word processor&hellip; the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer&hellip; emacs outshines all other editing software in approximately the same way that the noonday sun does the stars.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jacmoe.github.io/hccw/docs/emacs/">
+    <meta property="article:section" content="DOCS :: Hotel California of Creative Writing">
+    <meta property="og:site_name" content="Hotel California of Creative Writing">
+    <title>Emacs :: Hotel California of Creative Writing</title>
+    <link href="../../docs/emacs/index.xml" rel="alternate" type="application/rss+xml" title="Emacs :: Hotel California of Creative Writing">
+    <link href="../../docs/emacs/index.print.html" rel="alternate" type="text/html" title="Emacs :: Hotel California of Creative Writing">
+    <link href="../../images/logo.png?1697232241" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1697232241" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1697232241" rel="stylesheet">
+    <link href="../../css/fonts.css?1697232241" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1697232241" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1697232241" rel="stylesheet">
+    <link href="../../css/theme-zen-dark.css?1697232241" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1697232241" rel="stylesheet">
+    <link href="../../css/print.css?1697232241" rel="stylesheet" media="print">
+    <link href="../../css/ie.css?1697232241" rel="stylesheet">
+    <script src="../../js/url.js?1697232241"></script>
+    <script src="../../js/variant.js?1697232241"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_Reset_view = 'Reset view';
+      window.T_View_reset = 'View reset!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/jacmoe.github.io\/hccw/';
+      window.variants && variants.init( [ 'zen-dark', 'zen-light' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="../../docs/emacs/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#emacs-basics">Emacs basics</a></li>
+    <li><a href="#doom-emacs">Doom-Emacs</a></li>
+    <li><a href="#notes-about-the-hotel-california-configuration">Notes about the Hotel California configuration</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../"><span itemprop="name">Hotel California of Creative Writing</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../docs/"><span itemprop="name">DOCS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Emacs</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/emacs/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)">
+                <i class="fa-fw fas fa-print"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/" title="DOCS (🡐)">
+                <i class="fa-fw fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="../../docs/org-mode/" title="Org-mode (🡒)">
+                <i class="fa-fw fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="emacs">Emacs</h1>
+
+<h2 id="introduction">Introduction</h2>
+<blockquote>
+<p>“I use emacs, which might be thought of as a thermonuclear word processor&hellip; the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer&hellip; emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”</p>
+</blockquote>
+<div style="font-size:0.7em;font-style:italic;padding-left:30px;padding-bottom:40px;">
+<p>-Neal Stephenson, 1998 (<a href="https://en.wikipedia.org/wiki/In_the_Beginning..._Was_the_Command_Line" target="_blank">In the Beginning&hellip; Was the Command Line - Wikipedia</a>)</p>
+</div>
+<p>I can make Emacs fit my workflow rather than the other way around.</p>
+<img alt="Hackerman" src="../../images/hackerman1.jpg"/>
+
+<p>Emacs is a LISP machine.</p>
+<h2 id="emacs-basics">Emacs basics</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/RuiBsWQeeTs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>It’s highly recommended to run Emacs without any customization a couple of times to learn how the basic Emacs commands work. We can do that by running Emacs with the <code>Q</code> command-line argument, like this: <code>emacs -Q</code>. If you want—again, highly recommended—you can run the Emacs Tutorial by running <code>C-h t</code>. Do the tutorial until you feel confident. Also, experiment in the Scratch buffer, like in the video tutorial above.</p>
+<br/>
+<p>Common Emacs commands:</p>
+<ul>
+<li><code>C-x C-f</code> : <code>find-file</code>, allows you to open an existing file. If the file doesn’t exist, create a new file.</li>
+<li><code>C-x C-s</code> : <code>save-buffer</code>, saves buffer to disk.</li>
+<li><code>C-x b</code> : <code>ibuffer</code>, show a list of buffers in the minibuffer, and allows you to switch to a different buffer.</li>
+<li><code>C-x C-b</code> : <code>ibuffer</code>, runs ibuffer in a new window (use <code>q</code> to quit).</li>
+<li><code>C-x k</code> : kill (close) buffer.</li>
+<li><code>C-x C-c</code> : quit Emacs.</li>
+<li><code>C-o</code> : <code>org-open-line</code> : inserts new line below point.</li>
+<li><code>C-x 2</code> : split window in two, one below another.</li>
+<li><code>C-x 3</code> : split window in two, side-by-side windows.</li>
+<li><code>C-x o</code> : switch to other window.</li>
+<li><code>C-x 0</code> : close window.</li>
+<li><code>C-x 1</code> : close other windows.</li>
+<li><code>C-&lt;space&gt;</code> : toggle the mark.</li>
+<li><code>C-w</code> : kill (cut) text between point and mark. <em>(‘w’ is for “wipe”)</em>.</li>
+<li><code>M-w</code> : (copy) save region, but don’t kill it. <em>(‘w’ is for “wipe”)</em></li>
+<li><code>C-y</code> : yank (paste) first item from the kill-ring.</li>
+<li><code>M-y</code> : display items in the kill-ring to yank (paste) into the buffer.</li>
+</ul>
+<br/>
+<p>To get out of trouble, use <code>C-g</code> (keyboard quit) to cancel whatever it is that Emacs is doing at the moment. Use <code>C-x C-c</code> to rage-quit if you need to (I admit that I have when I first started out). <code>C-x u</code> will undo, and <code>C-?</code> will redo. Use <code>C-x C-s</code> to save current buffer. If the current buffer is a horrible mess, you can run <code>M-x revert-buffer</code> to get back to whatever it was when you loaded it from disk (by doing a <code>C-x C-f</code>). Also, sometimes you will want to toggle a file read-only. You can do that by pressing <code>x C-q</code>.</p>
+<br/>
+<p>Press <code>C-h</code> to view a list of options to get help. Especially useful is <code>C-h k</code> when you want to know what a keyboard command does without running it first. For example, pressing <code>C-h k &lt;F4&gt;</code> will tell you that it runs the command <code>kmacro-end-or-call-macro</code>. Press <code>q</code> to close the help window.</p>
+<br/>
+<p>If you want to read a comprehensive—very much so—guide to Emacs, the history, and the details of how it works, read my massive <a href="https://jacmoes.wordpress.com/2019/09/24/creative-writing-with-emacs/" target="_blank">Creative writing with Emacs</a> blog post from 2019. It delves into the mechanics of Emacs in much more depth, leaving us free to explore Emacs as a writer’s toolbox. So, if you are completely blank with regard to Emacs, I highly recommend that you read at least the first part of it before continuing.</p>
+<br/>
+<p>And, before you ask, let me tell you my favorite Emacs command: <code>C-o</code> (<em>insert new line below</em>); I use it all the time!</p>
+<br/>
+<p>Now that you know a thing or two about Emacs, here’s another introductory video about Emacs as a text editor:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jPkIaqSh3cA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>NB: He uses the <code>&lt;Esc&gt;</code> key as an alternative to <code>&lt;Control&gt;</code> like in <code>&lt;Esc&gt; y</code>. May I suggest that you use <code>C-y</code> instead. Using the Escape key that way will conflict with the modal editing package Boon mentioned below./</p>
+<br/>
+<h2 id="doom-emacs">Doom-Emacs</h2>
+<p><a href="https://github.com/hlissner/doom-emacs" target="_blank">Doom-Emacs</a> is a minimalist modern Emacs distribution that is light and fast. It provides a rock-solid and highly configurable infrastructure to base an Emacs configuration on.</p>
+<br/>
+<p>I switched to Doom-Emacs after declaring Emacs Bankruptcy <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and I haven’t regretted it. It uses every trick in the book to optimize, and the install/upgrade/maintenance scripts are excellent. It provides infrastructure and a well thought out framework for creating your own, speedy Emacs configuration.</p>
+<h2 id="notes-about-the-hotel-california-configuration">Notes about the Hotel California configuration</h2>
+<p>If you feel that you need to have at least a menu-bar, then you can turn it on/off by running this command: <code>M-x menu-bar-mode</code>. It can be useful sometimes, especially when learning the Emacs ropes.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>When your InitFile gets so large that you really need to start over, then you have declared “.emacs bankruptcy”. <a href="https://www.emacswiki.org/emacs/DotEmacsBankruptcy" target="_blank">EmacsWiki: Dot Emacs Bankruptcy</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" href="../../">
+            <img src="../../images/logo.png">
+          </a>
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="../../js/auto-complete.js?1697232241" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1697232241" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1697232241" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1697232241" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1697232241" defer></script>
+        <script src="../../js/search.js?1697232241" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="../../"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/docs/" class="parent "><a class="padding" href="../../docs/">DOCS</a><ul id="R-subsections-2f67fdc9a362fd86f1cfd4450ed56551" class="morespace collapsible-menu">
+          <li data-nav-id="/docs/emacs/" class="active"><a class="padding" href="../../docs/emacs/">Emacs</a></li>
+          <li data-nav-id="/docs/org-mode/" class=""><a class="padding" href="../../docs/org-mode/">Org-mode</a></li>
+          <li data-nav-id="/docs/boon/" class=""><a class="padding" href="../../docs/boon/">Boon</a></li>
+          <li data-nav-id="/docs/dictionaries-etc/" class=""><a class="padding" href="../../docs/dictionaries-etc/">Dictionaries et cetera</a></li>
+          <li data-nav-id="/docs/tracking-progress/" class=""><a class="padding" href="../../docs/tracking-progress/">Tracking progress</a></li>
+          <li data-nav-id="/docs/organize-the-writing/" class=""><a class="padding" href="../../docs/organize-the-writing/">Organize the writing</a></li>
+          <li data-nav-id="/docs/capturing-thoughts/" class=""><a class="padding" href="../../docs/capturing-thoughts/">Capturing thoughts</a></li>
+          <li data-nav-id="/docs/saving-work/" class=""><a class="padding" href="../../docs/saving-work/">Saving the work</a></li>
+          <li data-nav-id="/docs/exporting/" class=""><a class="padding" href="../../docs/exporting/">Exporting</a></li>
+          <li data-nav-id="/docs/creature-comforts/" class=""><a class="padding" href="../../docs/creature-comforts/">Creature comforts</a></li>
+          <li data-nav-id="/docs/org-roam/" class=""><a class="padding" href="../../docs/org-roam/">Org-roam</a></li>
+          <li data-nav-id="/docs/other-things/" class=""><a class="padding" href="../../docs/other-things/">Other things</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-zen-dark" value="zen-dark" selected>Zen Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="../../js/clipboard.min.js?1697232241" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1697232241" defer></script>
+    <script src="../../js/theme.js?1697232241" defer></script>
+  </body>
+</html>
