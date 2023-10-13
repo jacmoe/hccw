@@ -1,4 +1,4 @@
-baseURL = "https://jacmoe.github.io/hotel-california-of-creative-writing/"
+baseURL = "https://jacmoe.github.io/hccw/"
 languageCode = "en-us"
 title = "Hotel California of Creative Writing"
 publishDir = "docs"

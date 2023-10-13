@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Other things on Hotel California of Creative Writing</title>
-    <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/other-things/</link>
+    <link>https://jacmoe.github.io/hccw/docs/other-things/</link>
     <description>Recent content in Other things on Hotel California of Creative Writing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jacmoe.github.io/hotel-california-of-creative-writing/docs/other-things/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jacmoe.github.io/hccw/docs/other-things/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

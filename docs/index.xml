@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hotel California of Creative Writing</title>
-    <link>https://jacmoe.github.io/hotel-california-of-creative-writing/</link>
+    <link>https://jacmoe.github.io/hccw/</link>
     <description>Recent content on Hotel California of Creative Writing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jacmoe.github.io/hotel-california-of-creative-writing/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jacmoe.github.io/hccw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DOCS</title>
-      <link>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/</link>
+      <link>https://jacmoe.github.io/hccw/docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jacmoe.github.io/hotel-california-of-creative-writing/docs/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/</guid>
       <description>Emacs - my Hotel California This is a detailed explanation of why Emacs is my Hotel California of creative writing. It shows how I have created a writing environment exactly how I want it to be, and why there—in my mind—is nothing out there that compares to it.
 Perhaps when you think of Emacs, you think of it as a text editor and an Integrated Development Environment (IDE).
 It is my hope that, after reading this article, that you start thinking of it as an Integrated Writing Environment (IWE) as well.</description>
