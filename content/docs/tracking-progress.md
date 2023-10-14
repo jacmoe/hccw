@@ -7,7 +7,7 @@ weight = 5
 
 ## Track-table {#tracking-progress-track-table}
 
-{{< figure src="images/tracktable.png" alt="Track-table keeps track of words written per day" title="Track-table keeps track of words written per day" >}}
+{{< figure src="/images/tracktable.png" alt="Track-table keeps track of words written per day" title="Track-table keeps track of words written per day" >}}
 
 
 ## Clocking time {#tracking-progress-clocking-time}
@@ -17,7 +17,7 @@ There is also the option of starting a 20 minute Pomodoro session, by pressing `
 
 <div title="Pomodoro session">
 
-<img src="images/pomodoro.png" alt="Pomodoro session" title="Pomodoro session" />
+<img src="/images/pomodoro.png" alt="Pomodoro session" title="Pomodoro session" />
 Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this:
 
 </div>
@@ -51,7 +51,7 @@ A clocktable can be configured, for example, to show time clocked until now, lik
 
 <div title="Time clocked in total">
 
-<img src="images/clocktable-master.png" alt="Time clocked in total" title="Time clocked in total" />
+<img src="/images/clocktable-master.png" alt="Time clocked in total" title="Time clocked in total" />
 Time clocked today:
 
 </div>
@@ -83,7 +83,7 @@ Often when writing, our progress can’t always be measured in words, so time sp
 
 Using `org-wc`.
 
-{{< figure src="images/org-wc.png" alt="Running M-x org-wc-display shows word count per heading" title="Running M-x org-wc-display shows word count per heading" >}}
+{{< figure src="/images/org-wc.png" alt="Running M-x org-wc-display shows word count per heading" title="Running M-x org-wc-display shows word count per heading" >}}
 
 
 ## Column view {#tracking-progress-column-view}
@@ -91,16 +91,16 @@ Using `org-wc`.
 Column view is a good way to view properties of headers. While we can view todo status, categories, tags, time logged, and other standard properties, we can add our own, custom properties, and this is where it gets real interesting for creative writers.
 We can easily add properties to a heading by running `C-c C-x p`:
 
-{{< figure src="images/properties-actions.png" alt="Adding properties to a heading" title="Adding properties to a heading" >}}
+{{< figure src="/images/properties-actions.png" alt="Adding properties to a heading" title="Adding properties to a heading" >}}
 
 Now we can configure the `COLUMNS` special property, which will be inherited by child headings:
 
-{{< figure src="images/columns-source.png" alt="Setting up columns with properties" title="Setting up columns with properties" >}}
+{{< figure src="/images/columns-source.png" alt="Setting up columns with properties" title="Setting up columns with properties" >}}
 
 See [Org column view tutorial](https://orgmode.org/worg/org-tutorials/org-column-view-tutorial.html) for details.
 
 Having set it all up, we can now run `org-columns` by pressing `c x c`:
 
-{{< figure src="images/columns.png" alt="Column view" title="Column view" >}}
+{{< figure src="/images/columns.png" alt="Column view" title="Column view" >}}
 
 Pres `q` to exit.

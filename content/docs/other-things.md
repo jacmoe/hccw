@@ -20,21 +20,21 @@ Zotero is used to gather and store and export the citations/references, by the u
 
 <div title="Zotero">
 
-<img src="images/zotero.png" alt="Zotero" title="Zotero" />
+<img src="/images/zotero.png" alt="Zotero" title="Zotero" />
 After installing Zotero itself, the plugin can be installed by following this guide: <https://retorque.re/zotero-better-bibtex/installation/>. When downloading using Firefox, I had to right-click and “save as” because otherwise Firefox thought I was trying to install a Firefox add-on due to the file-extension being the same.
 
 </div>
 
 <div title="BetterBibtex installed">
 
-<img src="images/zotero-plugins.png" alt="BetterBibtex installed" title="BetterBibtex installed" />
+<img src="/images/zotero-plugins.png" alt="BetterBibtex installed" title="BetterBibtex installed" />
 When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted Bibtex file that we need in order to use it from Emacs.
 
 </div>
 
 <div title="Zotero export settings">
 
-<img src="images/zotero-export-settings.png" alt="Zotero export settings" title="Zotero export settings" />
+<img src="/images/zotero-export-settings.png" alt="Zotero export settings" title="Zotero export settings" />
 Choose “file - Export Library”, and choose the `Better BibLaTeX` as the format, and make sure to check the “keep updated” box. When you click “OK” you will be asked where to save the export. For my configuration, I have it as `~/Dropbox/skriv/jacmoe.bib`.
 
 </div>
@@ -60,11 +60,11 @@ Then, we set a placeholder for where the generated bibliography list will be ren
 
 Now that we’re all set up, we can now insert citations into our document by running `org-cite-insert` (bound to `C-c l @`)
 
-{{< figure src="images/citation-insert.png" alt="Inserting a citation in Emacs" title="Inserting a citation in Emacs" >}}
+{{< figure src="/images/citation-insert.png" alt="Inserting a citation in Emacs" title="Inserting a citation in Emacs" >}}
 
-{{< figure src="images/bibliography-source.png" alt="Bibliography source code" title="Bibliography source code" >}}
+{{< figure src="/images/bibliography-source.png" alt="Bibliography source code" title="Bibliography source code" >}}
 
-{{< figure src="images/bibliography-test.png" alt="Bibliography test rendering" title="Bibliography test rendering" >}}
+{{< figure src="/images/bibliography-test.png" alt="Bibliography test rendering" title="Bibliography test rendering" >}}
 
 
 ## Snippets {#other-things-snippets}

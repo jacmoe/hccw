@@ -150,6 +150,6 @@ In Org-mode tables are made of ASCII characters, but it feels like magic in acti
 
 See [Tables (The Org Manual)](https://orgmode.org/manual/Tables.html) for more details.
 
-We’ll see more of what Org-mode tables can do later on in this article, when discussing clock-tables and when discussing Org-tracktable.
+We’ll see more of what Org-mode tables can do later on in this article, when discussing clock-tables and when discussing Org-tracktable
 
 [^fn:1]: [Creating Footnotes (The Org Manual)](https://orgmode.org/manual/Creating-Footnotes.html)
