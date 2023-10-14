@@ -6,8 +6,8 @@
 :EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :archetype "home"
 :END:
-This is the home page
-#+hugo: {{< himg image="hccw" ext="png" title="Hotel California of Creative Writing">}}
+
+#+md: ![Hotel California of Creative Writing](images/hccw.png?width=100%&height=100%)
 
 * DOCS
 :PROPERTIES:
@@ -16,7 +16,7 @@ This is the home page
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 0
 :END:
 
-#+hugo: {{< himg image="hotel-california" ext="png" title="Hotel California of Creative Writing">}}
+#+md: ![Hotel California of Creative Writing](../images/hotel-california.png?width=100%&height=100%)
 
 This is a detailed explanation of why Emacs is my Hotel California of creative writing. It shows how I have created a writing environment exactly how I want it to be, and why there—in my mind—is nothing out there that compares to it.
 #+begin_export html
@@ -318,8 +318,7 @@ Not all commands work as you would expect, however, so if we wanted to run ~find
 :CUSTOM_ID: boon-layout
 :END:
 Here’s how the keyboard layout looks like for Command mode using Boon:
-#+attr_html: :alt The Hotel California layout :title The Hotel California layout
-[[file:images/keyboard-layout.png]]
+#+md: ![The Hotel California layout](../../images/keyboard-layout.png?width=100%&height=100%)
 
 The right-hand side of the keyboard is dedicated to moving around while the left-hand side is dedicated to issuing commands.
 

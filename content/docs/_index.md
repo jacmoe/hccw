@@ -5,7 +5,7 @@ draft = false
 weight = 0
 +++
 
-{{< himg image="hotel-california" ext="png" title="Hotel California of Creative Writing">}}
+![Hotel California of Creative Writing](../images/hotel-california.png?width=100%&height=100%)
 
 This is a detailed explanation of why Emacs is my Hotel California of creative writing. It shows how I have created a writing environment exactly how I want it to be, and why there—in my mind—is nothing out there that compares to it.
 

@@ -38,7 +38,7 @@ Not all commands work as you would expect, however, so if we wanted to run `find
 
 Here’s how the keyboard layout looks like for Command mode using Boon:
 
-{{< figure src="images/keyboard-layout.png" alt="The Hotel California layout" title="The Hotel California layout" >}}
+![The Hotel California layout](../../images/keyboard-layout.png?width=100%&height=100%)
 
 The right-hand side of the keyboard is dedicated to moving around while the left-hand side is dedicated to issuing commands.
 
