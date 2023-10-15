@@ -7,7 +7,7 @@
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :archetype "home"
 :END:
 
-#+md: ![Hotel California of Creative Writing](/images/hccw.png?width=100%&height=100%)
+#+hugo: {{< himg image="main" ext="png" title="Hotel California of Creative Writing">}}
 
 * DOCS
 :PROPERTIES:

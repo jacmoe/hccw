@@ -5,4 +5,4 @@ draft = false
 archetype = "home"
 +++
 
-![Hotel California of Creative Writing](/images/hccw.png?width=100%&height=100%)
+{{< himg image="main" ext="png" title="Hotel California of Creative Writing">}}
