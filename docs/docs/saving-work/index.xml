@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saving the work :: Hotel California of Creative Writing</title>
-    <link>http://localhost:1313/hccw/docs/saving-work/</link>
+    <link>https://jacmoe.github.io/hccw/docs/saving-work/</link>
     <description>Magit Prose linting with Vale Unsaved changes Sometimes you want to know what changes you have made to a buffer since your last save. Since you haven’t saved the file yet, Magit can’t help you, so you need something else. Fortunately, we can use Emacs’ diff-buffer-with-file, mapped to C-d.&#xA;Using diff to see the difference between buffer and file Emacs will ask you for the file on disk, and then open a diff buffer where you can examine the differences. Use x o (o for ‘other’) to go to the diff buffer, if you’re not already in it. Using movement commands, like i o k l, etc. And then, when done, close the buffer by pressing x 0 (zero), or x 1 if you’re not in the diff buffer.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/hccw/docs/saving-work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jacmoe.github.io/hccw/docs/saving-work/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

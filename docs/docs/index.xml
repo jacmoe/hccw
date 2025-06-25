@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DOCS :: Hotel California of Creative Writing</title>
-    <link>http://localhost:1313/hccw/docs/</link>
+    <link>https://jacmoe.github.io/hccw/docs/</link>
     <description>This is a detailed explanation of why Emacs is my Hotel California of creative writing. It shows how I have created a writing environment exactly how I want it to be, and why there—in my mind—is nothing out there that compares to it.&#xA;Perhaps when you think of Emacs, you think of it as a text editor and an Integrated Development Environment (IDE).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/hccw/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jacmoe.github.io/hccw/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/hccw/docs/emacs/</link>
+      <link>https://jacmoe.github.io/hccw/docs/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/emacs/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/emacs/</guid>
       <description>Introduction “I use emacs, which might be thought of as a thermonuclear word processor… the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer… emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”</description>
     </item>
     <item>
       <title>Org-mode</title>
-      <link>http://localhost:1313/hccw/docs/org-mode/</link>
+      <link>https://jacmoe.github.io/hccw/docs/org-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/org-mode/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/org-mode/</guid>
       <description>Introduction A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.&#xA;Org-mode is based on outline-mode which is again based on text-mode, and is both a markup language, an organizer (GTD), and an out-liner, and there are some people who live their entire lives in Org-mode.&#xA;Here’s a small demo of Org-mode in action (may I suggest that you turn off the sound for this one): Emacs Org Mode Demo 2021 Here is a nerdy blog post about why Org-mode is a great markup language: Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text</description>
     </item>
     <item>
       <title>Boon</title>
-      <link>http://localhost:1313/hccw/docs/boon/</link>
+      <link>https://jacmoe.github.io/hccw/docs/boon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/boon/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/boon/</guid>
       <description>Introduction Boon is a modal editing package for Emacs that is ergonomic and designed to integrate well with existing Emacs infrastructure. That means that we can continue to use the standard Emacs keyboard shortcuts should we choose to do so, in addition to the features that Boon provides.&#xA;Boon is designed so that the right hand takes care of movement, and the left hand do the actions. And great care is taken to ensure that the fingers never leave the home row. Important for touch typists!</description>
     </item>
     <item>
       <title>Dictionaries et cetera</title>
-      <link>http://localhost:1313/hccw/docs/dictionaries-etc/</link>
+      <link>https://jacmoe.github.io/hccw/docs/dictionaries-etc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/dictionaries-etc/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/dictionaries-etc/</guid>
       <description>Define-word Quick word definition Dictionary server Dictionary server lookup Webster Look up word in Merriam-Webster Powerthesaurus Synonym lookup Sentences lookup Prose linting Prose linting with Vale Use C-c t f to toggle flycheck.&#xA;The Vale syntax checker will not check inside headings tagged with noexport. Outside of the noexport sections we can use these comments to turn Vale off and on:</description>
     </item>
     <item>
       <title>Tracking progress</title>
-      <link>http://localhost:1313/hccw/docs/tracking-progress/</link>
+      <link>https://jacmoe.github.io/hccw/docs/tracking-progress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/tracking-progress/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/tracking-progress/</guid>
       <description>Track-table Track-table keeps track of words written per day Clocking time c x i to clock in. c x o to clock out. c x q to cancel a clock. There is also the option of starting a 20 minute Pomodoro session, by pressing B.&#xA;Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this: :LOGBOOK: CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&gt; 0:01 CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&gt; 0:30 CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&gt; 0:10 :END: We can generate clock report table by executing C-c l c R or M-x org-clock-report. The following will be inserted at point, depending on the logbooks in the current document:</description>
     </item>
     <item>
       <title>Organize the writing</title>
-      <link>http://localhost:1313/hccw/docs/organize-the-writing/</link>
+      <link>https://jacmoe.github.io/hccw/docs/organize-the-writing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/organize-the-writing/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/organize-the-writing/</guid>
       <description>All in one Everything in one big file.&#xA;Master document Transclusion.</description>
     </item>
     <item>
       <title>Capturing thoughts</title>
-      <link>http://localhost:1313/hccw/docs/capturing-thoughts/</link>
+      <link>https://jacmoe.github.io/hccw/docs/capturing-thoughts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/capturing-thoughts/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/capturing-thoughts/</guid>
       <description></description>
     </item>
     <item>
       <title>Saving the work</title>
-      <link>http://localhost:1313/hccw/docs/saving-work/</link>
+      <link>https://jacmoe.github.io/hccw/docs/saving-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/saving-work/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/saving-work/</guid>
       <description>Magit Prose linting with Vale Unsaved changes Sometimes you want to know what changes you have made to a buffer since your last save. Since you haven’t saved the file yet, Magit can’t help you, so you need something else. Fortunately, we can use Emacs’ diff-buffer-with-file, mapped to C-d.&#xA;Using diff to see the difference between buffer and file Emacs will ask you for the file on disk, and then open a diff buffer where you can examine the differences. Use x o (o for ‘other’) to go to the diff buffer, if you’re not already in it. Using movement commands, like i o k l, etc. And then, when done, close the buffer by pressing x 0 (zero), or x 1 if you’re not in the diff buffer.</description>
     </item>
     <item>
       <title>Exporting</title>
-      <link>http://localhost:1313/hccw/docs/exporting/</link>
+      <link>https://jacmoe.github.io/hccw/docs/exporting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/exporting/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/exporting/</guid>
       <description>Introduction HTML to E-book PDF via LaTeX Open Document Format</description>
     </item>
     <item>
       <title>Creature comforts</title>
-      <link>http://localhost:1313/hccw/docs/creature-comforts/</link>
+      <link>https://jacmoe.github.io/hccw/docs/creature-comforts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/creature-comforts/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/creature-comforts/</guid>
       <description>Themes and fonts Zen-mode and transparency Zen-mode with transparency turned on Scroll-center-cursor-mode</description>
     </item>
     <item>
       <title>Org-roam</title>
-      <link>http://localhost:1313/hccw/docs/org-roam/</link>
+      <link>https://jacmoe.github.io/hccw/docs/org-roam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/org-roam/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/org-roam/</guid>
       <description>Org-roam UI</description>
     </item>
     <item>
       <title>Other things</title>
-      <link>http://localhost:1313/hccw/docs/other-things/</link>
+      <link>https://jacmoe.github.io/hccw/docs/other-things/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hccw/docs/other-things/</guid>
+      <guid>https://jacmoe.github.io/hccw/docs/other-things/</guid>
       <description>Journaling Blogging Bibliography Zotero Zotero is used to gather and store and export the citations/references, by the use of the Better-Bibtex plugin.&#xA;After installing Zotero itself, the plugin can be installed by following this guide: . When downloading using Firefox, I had to right-click and “save as” because otherwise Firefox thought I was trying to install a Firefox add-on due to the file-extension being the same. When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted Bibtex file that we need in order to use it from Emacs. Choose “file - Export Library”, and choose the `Better BibLaTeX` as the format, and make sure to check the “keep updated” box. When you click “OK” you will be asked where to save the export. For my configuration, I have it as `~/Dropbox/skriv/jacmoe.bib`. To actually populate the bibliography library, I am using the Zotero Firefox connector plugin. I can press a button in Firefox whenever I am visiting a resource.</description>
     </item>
   </channel>

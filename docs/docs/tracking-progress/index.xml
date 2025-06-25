@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tracking progress :: Hotel California of Creative Writing</title>
-    <link>http://localhost:1313/hccw/docs/tracking-progress/</link>
+    <link>https://jacmoe.github.io/hccw/docs/tracking-progress/</link>
     <description>Track-table Track-table keeps track of words written per day Clocking time c x i to clock in. c x o to clock out. c x q to cancel a clock. There is also the option of starting a 20 minute Pomodoro session, by pressing B.&#xA;Clocking is tied to the heading you are working under, and will add a `:LOGBOOK:` section to it, like this: :LOGBOOK: CLOCK: [2017-04-10 Mon 15:16]--[2017-04-10 Mon 15:17] =&gt; 0:01 CLOCK: [2017-04-07 Fri 16:05]--[2017-04-07 Fri 16:35] =&gt; 0:30 CLOCK: [2017-04-05 Wed 16:42]--[2017-04-05 Wed 16:52] =&gt; 0:10 :END: We can generate clock report table by executing C-c l c R or M-x org-clock-report. The following will be inserted at point, depending on the logbooks in the current document:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/hccw/docs/tracking-progress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jacmoe.github.io/hccw/docs/tracking-progress/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

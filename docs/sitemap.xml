@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hccw/docs/emacs/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/emacs/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/org-mode/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/org-mode/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/boon/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/boon/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/dictionaries-etc/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/dictionaries-etc/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/tracking-progress/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/tracking-progress/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/organize-the-writing/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/organize-the-writing/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/capturing-thoughts/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/capturing-thoughts/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/saving-work/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/saving-work/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/exporting/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/exporting/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/creature-comforts/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/creature-comforts/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/org-roam/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/org-roam/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/other-things/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/other-things/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/categories/</loc>
+    <loc>https://jacmoe.github.io/hccw/categories/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/docs/</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/</loc>
+    <loc>https://jacmoe.github.io/hccw/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/hccw/tags/</loc>
+    <loc>https://jacmoe.github.io/hccw/tags/</loc>
   </url>
 </urlset>
