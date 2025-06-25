@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emacs on Hotel California of Creative Writing</title>
-    <link>https://jacmoe.github.io/hccw/docs/emacs/</link>
-    <description>Recent content in Emacs on Hotel California of Creative Writing</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jacmoe.github.io/hccw/docs/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <title>Emacs :: Hotel California of Creative Writing</title>
+    <link>http://localhost:1313/hccw/docs/emacs/</link>
+    <description>Introduction “I use emacs, which might be thought of as a thermonuclear word processor… the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer… emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/hccw/docs/emacs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

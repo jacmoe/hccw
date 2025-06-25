@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Other things on Hotel California of Creative Writing</title>
-    <link>https://jacmoe.github.io/hccw/docs/other-things/</link>
-    <description>Recent content in Other things on Hotel California of Creative Writing</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jacmoe.github.io/hccw/docs/other-things/index.xml" rel="self" type="application/rss+xml" />
+    <title>Other things :: Hotel California of Creative Writing</title>
+    <link>http://localhost:1313/hccw/docs/other-things/</link>
+    <description>Journaling Blogging Bibliography Zotero Zotero is used to gather and store and export the citations/references, by the use of the Better-Bibtex plugin.&#xA;After installing Zotero itself, the plugin can be installed by following this guide: . When downloading using Firefox, I had to right-click and “save as” because otherwise Firefox thought I was trying to install a Firefox add-on due to the file-extension being the same. When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted Bibtex file that we need in order to use it from Emacs. Choose “file - Export Library”, and choose the `Better BibLaTeX` as the format, and make sure to check the “keep updated” box. When you click “OK” you will be asked where to save the export. For my configuration, I have it as `~/Dropbox/skriv/jacmoe.bib`. To actually populate the bibliography library, I am using the Zotero Firefox connector plugin. I can press a button in Firefox whenever I am visiting a resource.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/hccw/docs/other-things/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

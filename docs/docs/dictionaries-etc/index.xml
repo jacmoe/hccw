@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dictionaries et cetera on Hotel California of Creative Writing</title>
-    <link>https://jacmoe.github.io/hccw/docs/dictionaries-etc/</link>
-    <description>Recent content in Dictionaries et cetera on Hotel California of Creative Writing</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jacmoe.github.io/hccw/docs/dictionaries-etc/index.xml" rel="self" type="application/rss+xml" />
+    <title>Dictionaries et cetera :: Hotel California of Creative Writing</title>
+    <link>http://localhost:1313/hccw/docs/dictionaries-etc/</link>
+    <description>Define-word Quick word definition Dictionary server Dictionary server lookup Webster Look up word in Merriam-Webster Powerthesaurus Synonym lookup Sentences lookup Prose linting Prose linting with Vale Use C-c t f to toggle flycheck.&#xA;The Vale syntax checker will not check inside headings tagged with noexport. Outside of the noexport sections we can use these comments to turn Vale off and on:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/hccw/docs/dictionaries-etc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
