@@ -1,51 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jacmoe.github.io/hccw/docs/emacs/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/org-mode/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/boon/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/dictionaries-etc/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/tracking-progress/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/organize-the-writing/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/capturing-thoughts/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/saving-work/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/exporting/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/creature-comforts/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/org-roam/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/other-things/</loc>
-  </url>
-  <url>
-    <loc>https://jacmoe.github.io/hccw/categories/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/docs/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/</loc>
-  </url>
-  <url>
+  </url><url>
     <loc>https://jacmoe.github.io/hccw/tags/</loc>
   </url>
 </urlset>

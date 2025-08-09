@@ -2,18 +2,29 @@ baseURL = "https://jacmoe.github.io/hccw/"
 languageCode = "en-us"
 title = "Hotel California of Creative Writing"
 publishDir = "docs"
-theme = "hugo-theme-relearn"
+theme = "hugo-geekdoc"
 canonifyURLs = true
 relativeURLs = true
 
-[outputs]
-  home = ["HTML", "RSS", "PRINT", "SEARCH"]
-  section = ["HTML", "RSS", "PRINT"]
-  page = ["HTML", "RSS", "PRINT"]
+pluralizeListTitles = false
 
-[params]
-  themeVariant = [ "zen-dark", "zen-light" ]
-  disableExplicitIndexURLs = true
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
 
-[markup.goldmark.renderer]
-unsafe = true
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode or when nesting shortcodes (e.g. img within
+    # columns or tabs)
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[taxonomies]
+   tag = "tags"
