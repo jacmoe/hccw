@@ -1,0 +1,4 @@
+#+title: Hotel California of Creative Writing
+#+weight: -50
+
+{{< himg image="hccw" ext="png" title="Hotel California of Creative Writing">}}

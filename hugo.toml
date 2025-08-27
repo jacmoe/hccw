@@ -1,20 +1,12 @@
-baseURL = "https://jacmoe.github.io/hccw/"
+#baseURL = "https://jacmoe.github.io/hccw/"
+baseURL = "https://jacmoe.github.io/"
 languageCode = "en-us"
 title = "Hotel California of Creative Writing"
 publishDir = "docs"
-theme = "hugo-geekdoc"
-canonifyURLs = true
-relativeURLs = true
+theme = "hugo-theme-relearn"
 
-pluralizeListTitles = false
-
-# Geekdoc required configuration
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-disablePathToLower = true
-
-# Required if you want to render robots.txt template
-enableRobotsTXT = true
+[params]
+  themeVariant = ['zen-dark', 'zen-light']
 
 # Needed for mermaid shortcodes
 [markup]
