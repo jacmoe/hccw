@@ -42,14 +42,14 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
 | d ;               | delete word to the left                                               |
 | d SPACE           | delete line                                                           |
 | d region          | delete region                                                         |
-| d <number> action | delete times action, i.e. =d 4 l= delete four character to the left   |
-| `                 | toggle case between Capitalcase and lowercase. Works with regions     |
+| d <number> action | delete times action, i.e. =d 4 l= delete four character to the left     |
+| `                 | toggle case between Capital-case and lower-case. Works with regions   |
 | q <character>     | insert character                                                      |
 | t <character>     | change character under cursor to character                            |
 | w                 | show word-count, and—if tracktable present—words written towards goal |
-| n                 | narrow to subtree                                                     |
+| n                 | narrow to sub-tree                                                    |
 | N                 | widen view (un-narrow)                                                |
-| M                 | toggle Doom modeline                                                  |
+| M                 | toggle Doom mode-line                                                 |
 | s                 | toggle centered writing-mode where the cursor stays in the middle     |
 ** Insert-mode
 | command           | action                                                                |
@@ -58,23 +58,23 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
 
 * Regular
 ** Navigate
-   | normal        | boon   | action                                                  |
-   |---------------+--------+---------------------------------------------------------|
-   | C-f / C-b     | k / l  | move forward/backward by character                      |
-   | M-f / M-b     | j / ;  | move forward/backward by word                           |
-   | C-n / C-p     | o / i  | move forward/backward by line                           |
-   | C-a / C-e     | u / p  | go to line beginning/end                                |
-   | M-a / M-e     | K / L  | go to sentence beginning/end                            |
-   | M-{ / M-}     | I / O  | go to paragraph beginning/end                           |
-   | C-x [ / C-x ] |        | go to page beginning/end                                |
-   | M-< / M->     | < / >  | Move to document start / end                            |
-   | C-v           | -none- | scroll to next screen                                   |
-   | M-v           | -none- | scroll to previous screen                               |
-   | C-M-p         |        | scroll-down-line                                        |
-   | C-M-n         |        | scroll-up-line                                          |
-   | C-l           | -none- | scroll current line to center, top, bottom              |
-   | M-r           |        | reposition cursor to center, top, bottom                |
-   | M-m           |        | go to first non-whitespace on line, forward or backward |
+   | normal        | boon   | action                                                   |
+   |---------------+--------+----------------------------------------------------------|
+   | C-f / C-b     | k / l  | move forward/backward by character                       |
+   | M-f / M-b     | j / ;  | move forward/backward by word                            |
+   | C-n / C-p     | o / i  | move forward/backward by line                            |
+   | C-a / C-e     | u / p  | go to line beginning/end                                 |
+   | M-a / M-e     | K / L  | go to sentence beginning/end                             |
+   | M-{ / M-}     | I / O  | go to paragraph beginning/end                            |
+   | C-x [ / C-x ] |        | go to page beginning/end                                 |
+   | M-< / M->     | < / >  | Move to document start / end                             |
+   | C-v           | -none- | scroll to next screen                                    |
+   | M-v           | -none- | scroll to previous screen                                |
+   | C-M-p         |        | scroll-down-line                                         |
+   | C-M-n         |        | scroll-up-line                                           |
+   | C-l           | -none- | scroll current line to center, top, bottom               |
+   | M-r           |        | reposition cursor to center, top, bottom                 |
+   | M-m           |        | go to first non-white-space on line, forward or backward |
 
 ** Editing
 *** Files
@@ -102,14 +102,14 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
 *** Case change
    | normal  | boon | action                                                         |
    |---------+------+----------------------------------------------------------------|
-   | M-u     |      | upcase word                                                    |
-   | M-l     |      | lowercase word                                                 |
+   | M-u     |      | up-case word                                                   |
+   | M-l     |      | lower-case word                                                |
    | M-c     |      | capitalize word                                                |
    | M-- M-l |      | Convert last word to lower case.  Note ‘Meta--’ is Meta-minus. |
    | M-- M-u |      | Convert last word to all upper case.                           |
    | M-- M-c |      | Convert last word to lower case with capital initial.          |
-   | C-x C-u |      | uppercase region                                               |
-   | C-x C-l |      | lowercase region                                               |
+   | C-x C-u |      | upper-case region                                              |
+   | C-x C-l |      | lower-case region                                              |
 #+begin_export LaTeX
 \pagebreak
 #+end_export
@@ -166,18 +166,18 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
    | C-x a i l | x a i l | Add local inverse abbrev  |
 
 *** Spell check
-   | normal                       | boon | action                                        |
-   |------------------------------+------+-----------------------------------------------|
-   | F12                          |      | spellcheck buffer                             |
-   | S-F12                        |      | spellcheck word                               |
-   | i                            |      | add word to private dictionary                |
-   | r                            |      | change word                                   |
-   | a                            |      | skip word for this session                    |
-   | SPACE                        |      | skip word                                     |
-   | x                            |      | end spellchecking session                     |
-   | q                            |      | abort spell checking session                  |
-   | C-h                          |      | show options screen for spellchecking session |
-   | M-x ispell-change-dictionary |      | change current dictionary                     |
+   | normal                       | boon | action                                         |
+   |------------------------------+------+------------------------------------------------|
+   | F12                          |      | spell-check buffer                             |
+   | S-F12                        |      | spell-check word                               |
+   | i                            |      | add word to private dictionary                 |
+   | r                            |      | change word                                    |
+   | a                            |      | skip word for this session                     |
+   | SPACE                        |      | skip word                                      |
+   | x                            |      | end spell-checking session                     |
+   | q                            |      | abort spell checking session                   |
+   | C-h                          |      | show options screen for spell-checking session |
+   | M-x ispell-change-dictionary |      | change current dictionary                      |
 
 *** Tabs
    | normal | boon | action                                      |
@@ -247,7 +247,7 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
    |---------+------+---------------------------------------------------------|
    | C-x g   |      | run Magit                                               |
    | s       |      | stage                                                   |
-   | u       |      | unstage                                                 |
+   | u       |      | un-stage                                                |
    | k       |      | revert                                                  |
    | c c     |      | commit                                                  |
    | C-c C-c | c c  | Execute commit, after having written the commit message |
@@ -256,7 +256,7 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
    | h       |      | show Magit keyboard commands                            |
    | q       |      | exit Magit                                              |
 
-*** Draftmode
+*** Draft-mode
    | normal         | boon | action             |
    |----------------+------+--------------------|
    | M-x draft-mode |      | Turn on draft-mode |
@@ -288,7 +288,7 @@ For example, ~C-x~ means hold down the ~Control~ key while typing ~x~.
    | C-c n I |      | insert link to node, without creating a node |
    | C-c n p |      | find project                                 |
    | C-c n t |      | capture task                                 |
-   | C-c n b |      | capture inbox                                |
+   | C-c n b |      | capture in-box                               |
    | C-c n d |      | roam dailies                                 |
 
 *** Org-tracktable
@@ -308,11 +308,11 @@ Use tag ~nowc~ or ~noexport~ tags for the headings which content you do not want
 
 * Org-mode
 ** Visibility
-   | normal      | boon  | action                                |
-   |-------------+-------+---------------------------------------|
-   | TAB         |       | rotate current subtree between states |
-   | S-TAB       |       | rotate entire buffer between states   |
-   | C-c C-x C-v | c TAB | toggle visibility of inline images    |
+   | normal      | boon  | action                                 |
+   |-------------+-------+----------------------------------------|
+   | TAB         |       | rotate current sub-tree between states |
+   | S-TAB       |       | rotate entire buffer between states    |
+   | C-c C-x C-v | c TAB | toggle visibility of in-line images    |
 
 ** Navigate
    | normal    | boon  | action                            |
@@ -326,28 +326,28 @@ Use tag ~nowc~ or ~noexport~ tags for the headings which content you do not want
    | normal             | boon | action                                   |
    |--------------------+------+------------------------------------------|
    | M-RET              |      | insert new heading/item at current level |
-   | C-RET              |      | insert new heading after subtree         |
+   | C-RET              |      | insert new heading after sub-tree        |
    | C-c -              |      | turn line into item, cycle item type     |
    | C-c *              |      | turn item/line into headline             |
    | M-LEFT/RIGHT       |      | promote/demote heading                   |
-   | M-S-LEFT/RIGHT     |      | promote/demote current subtree           |
-   | M-UP/DOWN          |      | move subtree item up/down                |
-   | C-c C-x c          |      | clone a subtree                          |
+   | M-S-LEFT/RIGHT     |      | promote/demote current sub-tree          |
+   | M-UP/DOWN          |      | move sub-tree item up/down               |
+   | C-c C-x c          |      | clone a sub-tree                         |
    | C-c C-x v          |      | copy visible text                        |
-   | C-c C-x C-w/M-w    |      | kill/copy subtree                        |
-   | C-c C-x C-y or C-y |      | yank subtree                             |
+   | C-c C-x C-w/M-w    |      | kill/copy sub-tree                       |
+   | C-c C-x C-y or C-y |      | yank sub-tree                            |
 
 ** Marking
    | normal | boon | action                     |
    |--------+------+----------------------------|
    | M-h    |      | mark the element at point. |
-   | C-c @  |      | mark subtree               |
+   | C-c @  |      | mark sub-tree              |
 
 ** Other
 *** Narrowing
-   | normal  | boon | action                |
-   |---------+------+-----------------------|
-   | C-x n s |      | org-narrow-to-subtree |
+   | normal  | boon | action                 |
+   |---------+------+------------------------|
+   | C-x n s |      | org-narrow-to-sub-tree |
 
 *** Tags
    | normal      | boon | action                       |
@@ -406,9 +406,6 @@ Use tag ~nowc~ or ~noexport~ tags for the headings which content you do not want
 # ~C-h t~ : Emacs tutorial
 # ~C-h r~ : Emacs manual
 
-:DIRECTIVES:
-#  LocalWords:  tp num arg SPC modeline Draftmode Yasnippet wc sb sbtree sbt Mx
-#  LocalWords:  sbtreet tracktable tti ttw tts nowc noexport subtree RET dired
-#  LocalWords:  whitespace ispell Writeroom Magit Capitalcase un upcase LaTeX
-#  LocalWords:  pagebreak tt src flycheck proselint
-:END:
+# Local Variables:
+# jinx-local-words: "Abbrevs Magit Moena Mx Org Yasnippet abbrev arg dired num org src tp tracktable ts tt un un-narrow"
+# End:
