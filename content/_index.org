@@ -1,4 +1,10 @@
 #+title: Hotel California of Creative Writing
 #+weight: -50
+#+type: home
 
 {{< himg image="hccw" ext="png" title="Hotel California of Creative Writing">}}
+
+
+# Local Variables:
+# jinx-local-words: "hccw himg png"
+# End:

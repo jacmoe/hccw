@@ -4,3 +4,5 @@
 #+type: chapter
 
 Features are here
+
+{{% children sort="weight" %}}
