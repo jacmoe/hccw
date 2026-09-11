@@ -1,2 +1,2 @@
 * Hotel California of Creative Writing - Docs
-This is the source for the pages for [[https://github.com/jacmoe/.doom.d][Hotel California of Creative Writing]].
+This is the source for the pages for [[https://codeberg.org/jacmoe/hotel-california-of-creative-writing/][Hotel California of Creative Writing]].
