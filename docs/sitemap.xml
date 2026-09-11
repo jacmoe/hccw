@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jacmoe.github.io/index.html</loc>
+    <loc>https://jacmoe.github.io/hccw/index.html</loc>
   </url>
   <url>
-    <loc>https://jacmoe.github.io/overview/index.html</loc>
+    <loc>https://jacmoe.github.io/hccw/docs/emacs/index.html</loc>
   </url>
   <url>
-    <loc>https://jacmoe.github.io/features/index.html</loc>
+    <loc>https://jacmoe.github.io/hccw/overview/index.html</loc>
   </url>
   <url>
-    <loc>https://jacmoe.github.io/tags/index.html</loc>
+    <loc>https://jacmoe.github.io/hccw/features/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/org-mode/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/boon/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/dictionaries-etc/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/tracking-progress/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/organize-the-writing/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/capturing-thoughts/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/saving-work/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/exporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/creature-comforts/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/org-roam/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/other-things/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/docs/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jacmoe.github.io/hccw/tags/index.html</loc>
   </url>
 </urlset>

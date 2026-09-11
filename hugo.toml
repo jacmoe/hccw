@@ -1,6 +1,6 @@
-#baseURL = "https://jacmoe.github.io/hccw/"
-baseURL = "https://jacmoe.github.io/"
-languageCode = "en-us"
+baseURL = "https://jacmoe.github.io/hccw/"
+#baseURL = "https://jacmoe.github.io/"
+locale = "en-US"
 title = "Hotel California of Creative Writing"
 publishDir = "docs"
 theme = "hugo-theme-relearn"
@@ -20,3 +20,24 @@ theme = "hugo-theme-relearn"
 
 [taxonomies]
    tag = "tags"
+
+[security]
+  allowContent = ['^text/html$', '^text/org$', '^text/markdown$']
+  enableInlineShortcodes = true
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    proxyFromEnvironment = false
+    urls = ['(?i)^https?://[a-z0-9]', '! (?i)^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
+  [security.node]
+    [security.node.permissions]
+      allowAddons = ['tailwindcss']
+      allowChildProcess = ['tailwindcss']
+      allowRead = ['.']
+      allowWorker = ['tailwindcss']
+      allowWrite = []
+      disable = false

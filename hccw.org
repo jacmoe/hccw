@@ -26,7 +26,7 @@ Perhaps when you think of Emacs, you think of it as a text editor and an Integra
 #+begin_export html
 <br/>
 #+end_export
-It is my hope that, after reading this article, that  you start thinking of it as an Integrated Writing Environment (IWE) as well.
+It is my hope that, after reading this article, that you start thinking of it as an Integrated Writing Environment (IWE) as well.
 #+begin_export html
 <br/>
 #+end_export
@@ -39,7 +39,7 @@ It is my hope that, after reading this article, that  you start thinking of it a
 :END:
 *** Introduction
 #+begin_quote
-“I use emacs, which might be thought of as a thermonuclear word processor... the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer... emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”
+“I use Emacs, which might be thought of as a thermonuclear word processor... the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of Emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer... Emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.”
 #+end_quote
 #+begin_export html
 <div style="font-size:0.7em;font-style:italic;padding-left:30px;padding-bottom:40px;">
@@ -109,8 +109,8 @@ NB: He uses the ~<Esc>~ key as an alternative to ~<Control>~ like in ~<Esc> y~. 
 #+begin_export html
 <br/>
 #+end_export
-I switched to Doom-Emacs after declaring Emacs Bankruptcy [fn:1], and I haven’t regretted it. It uses every trick in the book to optimize, and the install/upgrade/maintenance scripts are excellent. It provides infrastructure and a well thought out framework for creating your own, speedy Emacs configuration.
-[fn:1] When your InitFile gets so large that you really need to start over, then you have declared “.emacs bankruptcy”. [[https://www.emacswiki.org/emacs/DotEmacsBankruptcy][EmacsWiki: Dot Emacs Bankruptcy]]
+I switched to Doom-Emacs after declaring Emacs Bankruptcy[fn:1], and I haven’t regretted it. It uses every trick in the book to optimize, and the install/upgrade/maintenance scripts are excellent. It provides infrastructure and a well-thought-out framework for creating your own, speedy Emacs configuration.
+[fn:1] When your InitFile gets so large that you really need to start over, then you have declared “Emacs bankruptcy”. [[https://www.emacswiki.org/emacs/DotEmacsBankruptcy][EmacsWiki: Dot Emacs Bankruptcy]]
 *** Notes about the Hotel California configuration
 If you feel that you need to have at least a menu-bar, then you can turn it on/off by running this command: ~M-x menu-bar-mode~. It can be useful sometimes, especially when learning the Emacs ropes.
 
@@ -132,8 +132,8 @@ A GNU Emacs major mode for keeping notes, authoring documents, computational not
 #+begin_export html
 <br/>
 #+end_export
-Here’s a small demo of Org-mode in action (/may I suggest that you turn off the sound for this one/):
-[[yt:hnMntOQjs7Q][Emacs Org Mode Demo 2021]]
+# Here’s a small demo of Org-mode in action (/may I suggest that you turn off the sound for this one/):
+# [[yt:hnMntOQjs7Q][Emacs Org Mode Demo 2021]]
 Here is a nerdy blog post about why Org-mode is a great markup language: [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][Org Mode Syntax Is One of the Most Reasonable Markup Languages to Use for Text]]
 
 - Official format
@@ -150,7 +150,7 @@ Here is a nerdy blog post about why Org-mode is a great markup language: [[https
 - ~*bold*~ *bold*
 - ~/italic/~ /italic/
 - ~_underline_~ _underline_
-- ~~code~~  ~code~
+- ~~code~~ ~code~
 - ~=monospaced=~ =monospaced=
 - ~# comment~ anything after a hash sign and a space will not be exported
 
@@ -164,7 +164,7 @@ A heading is one or more asterisks followed by a space and some text.
 - ~* heading~ level 1 heading
 - ~** heading~ level 2 heading
 - ~*** heading~ level 3 heading, and so on
-- ~* todo heading~ a heading with a todo
+- ~* todo heading~ a heading with a to-do
 - ~* heading :tag:~ heading with a tag
 - ~* heading :tag1:tag2:~ heading with two tags
 - ~* heading :@category:~ heading with a category
@@ -179,7 +179,7 @@ Press ~C-<Enter>~ to insert a new heading at the same level as the heading you�
 
 ~c u~ navigates up to the parent heading, if any.
 
-~S-<right>~ and ~S-<left>~ cycles through todo states for a heading, ie from /draft/ to /revise/ to /done/.
+~S-<right>~ and ~S-<left>~ cycles through to-do states for a heading, i.e. from /draft/ to /revise/ to /done/.
 
 ~c q~ can be used to set tags/categories for a heading. (~c c~ also works, when standing on the actual heading)
 
@@ -192,8 +192,8 @@ A list item is a dash (-) followed by a space and some text.
 
 - ~- list item~ unnumbered list item
 - ~1 list item~ numbered list item ()
-- ~- [ ] list item~ list item with unchecked check box
-- ~- [X] list item~ list item with checked check box
+- ~- [ ] list item~ list item with unchecked checkbox
+- ~- [X] list item~ list item with checked checkbox
 
 Press ~C-<Enter>~ to insert a new list item at the same level as the heading you’re in.
 
@@ -201,7 +201,7 @@ Press ~C-<Enter>~ to insert a new list item at the same level as the heading you
 
 ~M-<left>~ and ~M-<right>~ will demote/promote a list item.
 
-~S-<left>~ and ~S-<right>~ will cycle through different list styles, provided that the point is placed on the list item symbol (by default a ~-~))
+~S-<left>~ and ~S-<right>~ will cycle through different list styles, provided that the point is placed on the list item symbol (by default a ~-~)
 
 *** Document options
 :PROPERTIES:
@@ -272,7 +272,7 @@ The ~:ignore:~ tag instructs Org-mode to export the contents of a heading sectio
 
 In Org-mode tables are made of ASCII characters, but it feels like magic in action.
 
-[[yt:5vGGgfs0q3k][Using Emacs episode 54 - Org Tables]]
+# [[yt:5vGGgfs0q3k][Using Emacs episode 54 - Org Tables]]
 
 See [[https://orgmode.org/manual/Tables.html][Tables (The Org Manual)]] for more details.
 
@@ -308,7 +308,7 @@ In Insert mode, we can exit it by pressing ~<Esc>~ or ~C-;~. The cursor changes 
 #+begin_export html
 <br/>
 #+end_export
-~C-x~ and ~C-c~ shortcuts are handled in Boon so that any command starting with ~C-x~ is simply ~x~, and ~C-c C-~  shortcuts are just ~c~.
+~C-x~ and ~C-c~ shortcuts are handled in Boon so that any command starting with ~C-x~ is simply ~x~, and ~C-c C-~ shortcuts are just ~c~.
 #+begin_export html
 <br/>
 #+end_export
@@ -418,7 +418,7 @@ Another typical character replacement is change of case. The =`= key toggles bet
 
 Use ~C-c t f~ to toggle =flycheck=.
 
-The =Vale= syntax checker will not check inside headings tagged with /noexport/. Outside of the /noexport/ sections we can use these comments to turn Vale off and on:
+The =Vale= syntax checker will not check inside headings tagged with /noexport/. Outside the /noexport/ sections we can use these comments to turn Vale off and on:
 #+begin_src
 This is checked by Vale.
 # vale off
@@ -455,7 +455,7 @@ If we want to actually write a regular ASCII single or double quote, we need to 
 
 /Note: some exporters, like the Hugo exporter, will automatically convert regular ASCII quotes to typographical quotes, unless you wrap them in code tags (~)/.
 
-Additionally, ~typopunct~ also allows us to insert ~en-dash~ and ~em-dash~ by typing  ~--~ for – and ~---~ for —.
+Additionally, ~typopunct~ also allows us to insert ~en-dash~ and ~em-dash~ by typing ~--~ for – and ~---~ for —.
 
 *** Special characters
 :PROPERTIES:
@@ -465,6 +465,7 @@ To insert special characters enter =C-x 8 RETURN=:
 [[file:/images/insert-char-list.png]]
 Now, instead of pressing return, we can conveniently insert an often used character by pressing that key.
 For example, =C-x 8 o= will insert a degree symbol: °.
+# LTeX: enabled=false
 | code        | character | code        | character | code        | character |
 |-------------+-----------+-------------+-----------+-------------+-----------|
 | C-x 8 C     | ©         | C-x 8 R     | ®         | C-x 8 $     | ¤         |
@@ -483,6 +484,7 @@ For example, =C-x 8 o= will insert a degree symbol: °.
 | C-x 8 , ,   | ¸         | C-x 8 , c   | ç         | C-x 8 / a   | å         |
 | C-x 8 / e   | æ         | C-x 8 / o   | ø         | C-x 8 ' '   | ´         |
 | C-x 8 ^ i   | î         |             |           |             |           |
+# LTeX: enabled=true
 Use =C-x 8 C-h= to see a list of available characters that can be typed this way. You might have to run Emacs without any customization, =emacs Q=, in order to be able to enter the command.
 
 See also [[http://xahlee.info/emacs/emacs/emacs_n_unicode.html][Emacs: Unicode Tutorial]]
@@ -490,6 +492,7 @@ See also [[http://xahlee.info/emacs/emacs/emacs_n_unicode.html][Emacs: Unicode T
 :PROPERTIES:
 :CUSTOM_ID: dictionaries-etc-abbrevs
 :END:
+# LTeX: enabled=false
 =x a l= : add local abbrev
 
 =x a g= : add global abbrev
@@ -497,8 +500,8 @@ See also [[http://xahlee.info/emacs/emacs/emacs_n_unicode.html][Emacs: Unicode T
 =x a i l= : add local inverse abbrev
 
 =x a i g= : add global inverse abbrev
-
-Use =C-q SPACE= to insert a literal space after a abbreviation instead of expanding it.
+# LTeX: enabled=true
+Use =C-q SPACE= to insert a literal space after an abbreviation instead of expanding it.
 
 *** Registers
 :PROPERTIES:
@@ -515,7 +518,7 @@ All registers, except bookmark registers, are not persisted between Emacs sessio
 :PROPERTIES:
 :CUSTOM_ID: dictionaries-etc-registers-positions
 :END:
-=x r SPACE=  : save position in a buffer to a register.
+=x r SPACE= : save position in a buffer to a register.
 
 Use =c x j= to jump to saved buffer position.
 **** Text
@@ -564,7 +567,7 @@ Use =q= to close the bookmark list buffer.
 :CUSTOM_ID: tracking-progress-clocking-time
 :END:
 ~c x i~ to clock in. ~c x o~ to clock out. ~c x q~ to cancel a clock.
-There is also the option of starting a 20 minute Pomodoro session, by pressing ~B~.
+There is also the option of starting a 20-minute Pomodoro session, by pressing ~B~.
 #+attr_html: :alt Pomodoro session :title Pomodoro session
 [[file:/images/pomodoro.png]]
 Clocking is tied to the heading you are working under, and will add a ~:LOGBOOK:~ section to it, like this:
@@ -625,7 +628,7 @@ Using ~org-wc~.
 :PROPERTIES:
 :CUSTOM_ID: tracking-progress-column-view
 :END:
-Column view is a good way to view properties of headers. While we can view todo status, categories, tags, time logged, and other standard properties, we can add our own, custom properties, and this is where it gets real interesting for creative writers.
+Column view is a good way to view properties of headers. While we can view to-do status, categories, tags, time logged, and other standard properties, we can add our own, custom properties, and this is where it gets real interesting for creative writers.
 We can easily add properties to a heading by running ~C-c C-x p~:
 
 #+attr_html: :alt Adding properties to a heading :title Adding properties to a heading
@@ -767,7 +770,7 @@ Zotero is used to gather and store and export the citations/references, by the u
 After installing Zotero itself, the plugin can be installed by following this guide: [[https://retorque.re/zotero-better-bibtex/installation/]]. When downloading using Firefox, I had to right-click and “save as” because otherwise Firefox thought I was trying to install a Firefox add-on due to the file-extension being the same.
 #+attr_html: :alt BetterBibtex installed :title BetterBibtex installed
 [[file:/images/zotero-plugins.png]]
-When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted Bibtex file that we need in order to use it from Emacs.
+When the plugin has been successfully installed, it can be set up to automatically export and keep updated the LaTeX formatted BibTeX file that we need in order to use it from Emacs.
 #+attr_html: :alt Zotero export settings :title Zotero export settings
 [[file:/images/zotero-export-settings.png]]
 Choose “file - Export Library”, and choose the ~Better BibLaTeX~ as the format, and make sure to check the “keep updated” box. When you click “OK” you will be asked where to save the export. For my configuration, I have it as =~/Dropbox/skriv/jacmoe.bib=.
@@ -810,13 +813,13 @@ Now that we’re all set up, we can now insert citations into our document by ru
 :CUSTOM_ID: other-things-miscellaneous-grabbing-links-from-the-web-browser
 :END:
 By running ~M-x grab-x-link~ we can insert a link from an active web browser window.
-It will ask you to choose your browser—Chromium, Chrome, Firefox, or Brave—and what format to use (plain, markdown or Org format). Much quicker than manually copying, pasting, and write the title manually. The links can be edited by ~c l~ , and opened by ~c o~.
+It will ask you to choose your browser—Chromium, Chrome, Firefox, or Brave—and what format to use (plain, markdown or Org format). Much quicker than manually copying, pasting, and write the title manually. The links can be edited by ~c l~, and opened by ~c o~.
 
-**** Reading ebooks
+**** Reading e-books
 :PROPERTIES:
 :CUSTOM_ID: other-things-reading-ebooks
 :END:
-Use nov.el to read ebooks.
+Use nov.el to read e-books.
 
 
 #  LocalWords:  SETUPFILE attr html br IWE emacs memoranda monospaced wc todo
